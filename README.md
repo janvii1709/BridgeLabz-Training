@@ -1,2 +1,3 @@
 # BridgeLabz-Training
-I have done 25 questions of java basics combining level 1 and level 2
+# Day3
+I have done 25 questions of java basics combining LEVEL 1 and LEVEL 2 on Day3
