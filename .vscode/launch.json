@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PerimeterOfSquare",
+            "request": "launch",
+            "mainClass": "PerimeterOfSquare",
+            "projectName": "BridgeLabz-Training_b40a284d"
+        },
+        {
+            "type": "java",
+            "name": "AreaOfTriangle",
+            "request": "launch",
+            "mainClass": "AreaOfTriangle",
+            "projectName": "BridgeLabz-Training_b40a284d"
+        },
+        {
+            "type": "java",
             "name": "Calculator",
             "request": "launch",
             "mainClass": "Calculator",
