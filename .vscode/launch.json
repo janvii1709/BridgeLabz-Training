@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "projectName": "BridgeLabz-Training_b40a284d"
+        },
+        {
             "type": "jdk",
             "request": "launch",
             "name": "Launch Java App"
