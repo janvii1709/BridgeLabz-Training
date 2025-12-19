@@ -8,7 +8,6 @@ class PerimeterOfRectangle {
         int breadth = sc.nextInt(); 
         // Calculate perimeter of the rectangle
         int perimeter = 2 * (length + breadth);
-
         // Print the perimeter
         System.out.println("Perimeter of Rectangle is " + perimeter);
     }

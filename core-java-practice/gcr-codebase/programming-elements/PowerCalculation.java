@@ -6,11 +6,7 @@ class PowerCalculation {
         double b = sc.nextDouble();
         System.out.print("Enter exponent: ");
         double ex = sc.nextDouble();
-
         double res = Math.pow(b, ex);
-
         System.out.println("Result = " + res);
-
-        sc.close();
     }
 }
