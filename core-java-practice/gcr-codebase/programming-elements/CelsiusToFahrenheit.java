@@ -2,9 +2,9 @@
 import java.util.Scanner;
 class CelsiusToFahrenheitConversion {
   public static void main(String [] args){
-    Scanner sc=new Scanner (System.in);
-    double celsius=sc.nextDouble();
-    double fahrenheit =(celsius*9/5)+32;
+    Scanner sc=new Scanner (System.in);// taking input from user
+    double celsius=sc.nextDouble();// taking temperature in celcius 
+    double fahrenheit =(celsius*9/5)+32;// conversion of celcius to fahrenheit
     System.out.println(" Fahrenheit: "+  fahrenheit);
   }
 }

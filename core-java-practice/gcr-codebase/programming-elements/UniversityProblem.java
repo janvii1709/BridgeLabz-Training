@@ -1,9 +1,9 @@
 class UniversityProblem{
     public static void main(String[] args) {
-        int fee = 125000;
-        int discountPercent = 10;
-        int discount = fee * discountPercent / 100;
-        int finalFee = fee - discount;
+        int Fee = 125000;// original fee
+        int DiscountPercent = 10;// discount percentage
+        int discount = Fee * DiscountPercent / 100;// discount calculation
+        int finalFee = Fee - discount;// final fee after discount calculation
         System.out.println("The discount amount is INR " + discount + " and the final discounted fee is INR " + finalFee);
     }
 }

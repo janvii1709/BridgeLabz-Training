@@ -1,7 +1,7 @@
 import java.util.*;
 class PerimeterOfRectangle {
   public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);// input scanner
         // Length of the rectangle
         int length = sc.nextInt(); 
         // Breadth of the rectangle
