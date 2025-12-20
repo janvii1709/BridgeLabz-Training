@@ -57,3 +57,15 @@ BridgeLabz-Training/
 ⦁	Practiced conditional statements, for and while loop by solving LEVEL 1, LEVEL 2 and LEVEL 3 questions and pushed them in the control-flows folder in my GitHub repository.
 
 ⦁	Learned about the naming convention and implemented it by making changes in the code and pushing them again on the GitHub.
+
+
+20 Dec 2025 (Saturday) :
+⦁   Practiced Java Arrays concepts including one-dimensional and multi-dimensional arrays.
+
+⦁   Learned how to create, access, and modify arrays using loops and the length property.
+
+⦁   Solved multiple array-based problems.
+
+⦁   Implemented 2D arrays for storing and processing data 
+
+⦁   Pushed all completed problems and practice exercises to the core-java-practice branch in the gcr-codebase folder on GitHub.
