@@ -60,6 +60,7 @@ BridgeLabz-Training/
 
 
 20 Dec 2025 (Saturday) :
+
 ⦁   Practiced Java Arrays concepts including one-dimensional and multi-dimensional arrays.
 
 ⦁   Learned how to create, access, and modify arrays using loops and the length property.
