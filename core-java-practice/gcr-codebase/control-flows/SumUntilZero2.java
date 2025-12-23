@@ -11,6 +11,6 @@ public class SumUntilZero2 {
             }
             Sum = Sum + num;// add theinput to sum
         }
-        System.out.println("Total sum = " + Sum);// print the total sum
+        System.out.println(" Total sum = " + Sum);// print the total sum
     }
 }

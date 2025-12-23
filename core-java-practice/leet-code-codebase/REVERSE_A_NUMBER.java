@@ -1,7 +1,7 @@
 // REVERSE A NUMBER
 
 import java.util.Scanner;
-class ReverseNumber {
+class REVERSE_A_NUMBER {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
@@ -12,7 +12,7 @@ class ReverseNumber {
             rev = rev * 10 + digit;
             n = n / 10;
         }
-        System.out.println("Reversed number: " + reverse);
+        System.out.println("Reversed number: " + rev);
     }
 }
  
