@@ -2,6 +2,8 @@ This repository contains the work and assignment done during the BridgeLabz Trai
 
 WEEK 1 
 
+
+
 16 Dec 2025(Tuesday) : 
 
 ⦁	Introduction to BridgeLabz training structure and guidelines.
@@ -32,6 +34,7 @@ BridgeLabz-Training/
 +-- README.md
 
 
+
 17 Dec 2025(Wednesday) :
 
 ⦁	Solved 5 random problems and pushed them in the leetcode practice folder in my GitHub repository.
@@ -39,6 +42,7 @@ BridgeLabz-Training/
 ⦁	Implemented the Git commands learned previous day by merging the local folder with remote folder and by creating gcr-codebase branch in the repository.
 
 ⦁	Also solved some more basic problems and pushed them in the programming-elements folder of gcr-codebase in my GitHub repository.
+
 
 
 18 Dec 2025(Thursday) :
@@ -50,6 +54,7 @@ BridgeLabz-Training/
 ⦁	Practiced basic logical problems of LEVEL 1 and LEVEL 2 and pushed them in the programming-elements folder of gcr-codebase in my GitHub repository.
 
 
+
 19 Dec 2025(Friday) :
 
 ⦁	Revised Java Fundamentals, Conditional statements and Loops concepts and implemented them in various problems to make the concept more clear.
@@ -59,14 +64,97 @@ BridgeLabz-Training/
 ⦁	Learned about the naming convention and implemented it by making changes in the code and pushing them again on the GitHub.
 
 
+
 20 Dec 2025 (Saturday) :
 
-⦁   Practiced Java Arrays concepts including one-dimensional and multi-dimensional arrays.
+⦁ Practiced Java Arrays concepts including one-dimensional and multi-dimensional arrays.
 
-⦁   Learned how to create, access, and modify arrays using loops and the length property.
+⦁ Learned how to create, access, and modify arrays using loops and the length property.
 
-⦁   Solved multiple array-based problems.
+⦁ Solved multiple array-based problems.
 
-⦁   Implemented 2D arrays for storing and processing data 
+⦁ Implemented 2D arrays for storing and processing data
 
-⦁   Pushed all completed problems and practice exercises to the core-java-practice branch in the gcr-codebase folder on GitHub.
+⦁ Pushed all completed problems and practice exercises to the core-java-practice branch in the gcr-codebase folder on GitHub.
+
+⦁ Implemented real-world Java programs like Coffee Billing System and BMI Calculator using basic input, operators, loops, and      conditional statements.
+
+⦁ Focused on clean code practices, proper naming conventions, and control flow using switch, if-else, and loops.
+
+
+
+WEEK 2
+
+
+
+22 Dec 2025 (Monday) :
+
+⦁ Learned and revised Java String concepts required for String Lab practices.
+
+⦁ Understood what Strings are in Java and different ways to create Strings using literals and new keyword.
+
+⦁ Practiced the use of escape sequences like \n, \t, \", \\ to format output properly.
+
+⦁ Learned how to take String input from the user using Scanner class (next() and nextLine()).
+
+⦁ Worked with String arrays and learned how to store and access multiple strings using loops.
+
+⦁ Implemented Strings as method parameters to understand how data is passed between methods.
+
+⦁ Practiced commonly used String class built-in methods such as: length() , charAt() , equals() , toUpperCase() , toLowerCase() ,substring().
+
+⦁ Pushed all completed problems and practice exercises to the core-java-practice branch in the gcr-codebase folder on GitHub.
+
+
+
+23 Dec 2025 (Tuesday) :
+
+⦁ Reviewed the supporting study material explained during the sessions to strengthen conceptual understanding.
+
+⦁ Learned techniques to track daily tasks, monitor progress, and improve overall productivity.
+
+⦁ Implemented scenario-based Java programs such as "Election Booth Manager" and "Metro Smart Card Fare Deduction" using conditions, loops, and operators.
+
+⦁ Practiced "Java String programs" covering string creation, input handling, and common string operations.
+
+⦁ Gained basic understanding of "SDLC" phases and their role in software development.
+
+⦁ Learned fundamentals of "Scrum methodology", including roles, ceremonies, and iterative development approach.
+
+⦁ Pushed all completed problems and practice exercises to the core-java-practice branch in the gcr-codebase folder on GitHub.
+
+
+
+24 Dec 2025 (Wednesday) :
+
+⦁ Studied and implemented Java Methods concepts including user-defined methods, static methods, recursive methods, and reuse of methods.
+
+⦁ Practiced making methods dynamic by passing inputs and returning results effectively.
+
+⦁ Used Java Standard Library methods and the 'java.lang.Math' class in problem-solving.
+
+⦁ Followed best programming practices by using variables for all inputs, fixed values, and results.
+
+⦁ Applied proper naming conventions for classes, methods, and variables to maintain clean and readable code.
+
+⦁ Learned structured coding by writing meaningful method names that clearly indicate the action and output.
+
+⦁ Pushed all completed problems and practice exercises to the core-java-practice branch in the gcr-codebase folder on GitHub.
+
+
+
+26 Dec 2025 (Friday) :
+
+⦁ Gained hands-on experience with "Java Strings", including string handling and commonly used string functions.
+
+⦁ Learned "methods and function concepts", including parameter passing and returning values from methods.
+
+⦁ Explored commonly used "built-in functions" such as 'Random' and 'Math' with practical examples.
+
+⦁ Learned how to "organize code using multiple methods" to improve readability and reusability.
+
+⦁ Practiced "clean coding principles and best practices" to write structured and maintainable Java programs.
+
+⦁ Pushed all completed problems and practice exercises to the core-java-practice branch in the gcr-codebase folder on GitHub.
+
+
