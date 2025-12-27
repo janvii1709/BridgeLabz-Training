@@ -89,6 +89,7 @@ WEEK 2
 
 22 Dec 2025 (Monday) :
 
+
 ⦁ Learned and revised Java String concepts required for String Lab practices.
 
 ⦁ Understood what Strings are in Java and different ways to create Strings using literals and new keyword.
@@ -109,6 +110,7 @@ WEEK 2
 
 23 Dec 2025 (Tuesday) :
 
+
 ⦁ Reviewed the supporting study material explained during the sessions to strengthen conceptual understanding.
 
 ⦁ Learned techniques to track daily tasks, monitor progress, and improve overall productivity.
@@ -126,6 +128,7 @@ WEEK 2
 
 
 24 Dec 2025 (Wednesday) :
+
 
 ⦁ Studied and implemented Java Methods concepts including user-defined methods, static methods, recursive methods, and reuse of methods.
 
@@ -145,6 +148,7 @@ WEEK 2
 
 26 Dec 2025 (Friday) :
 
+
 ⦁ Gained hands-on experience with "Java Strings", including string handling and commonly used string functions.
 
 ⦁ Learned "methods and function concepts", including parameter passing and returning values from methods.
@@ -155,6 +159,25 @@ WEEK 2
 
 ⦁ Practiced "clean coding principles and best practices" to write structured and maintainable Java programs.
 
+⦁ Completed scenario-based Java programs to apply real-life problem-solving concepts.
+
+⦁ Implemented Bus Route Distance Tracker using a while loop, cumulative distance calculation, and user confirmation to exit.
+
+⦁ Developed Festival Lucky Draw program using if conditions, modulus operator, loops, and handled invalid inputs using continue.
+
 ⦁ Pushed all completed problems and practice exercises to the core-java-practice branch in the gcr-codebase folder on GitHub.
 
 
+
+27 Dec 2025 (Saturday):
+
+
+⦁ Practiced usage of Java built-in classes such as Random and Math with practical examples.
+
+⦁ Learned the importance of Date and Time handling in applications and implemented Java 8 features like LocalDate, LocalTime, and   LocalDateTime.
+
+⦁ Followed best practices of modular programming by organizing logic into separate methods for input, processing, and output.
+
+⦁ Focused on writing clean, readable, and reusable code by using meaningful method names and proper structure.
+
+⦁ Pushed all completed scenario-based programs and practice work to the core-java-practice branch in the gcr-codebase folder on GitHub.
