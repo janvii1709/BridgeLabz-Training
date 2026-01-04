@@ -268,4 +268,26 @@ WEEK 3
 
 ⦁ Pushed all completed scenario-based programs and practice work to the oops-practice branch in the scenario-based folder and gcr-codebase folder on GitHub.
 
- 
+
+
+ 03 Jan 2026 (Saturday) :
+
+⦁ Solved questions on Inheritance And Access Modifiers and pushed it to the oops-practice branch in the gcr-codebase folder on GitHub. 
+
+⦁ Pushed all completed scenario-based programs to the oops-practice branch in the scenario-based folder on GitHub.
+
+⦁ Solved Problems Of Leetcode and pushed it to the oops-practice branch in the leet-code-codebased folder on GitHub.
+
+
+04 Jan 2026 (Sunday) :
+
+⦁ Solved Problems Of Leetcode and pushed it to the oops-practice branch in the leet-code-codebased folder on GitHub.
+
+⦁ Updated README.md file with all the completed assignments and pushed it to the GitHub.
+
+
+WEEK 4 :
+
+
+05 Jan 2026 (Monday) :
+
