@@ -291,3 +291,44 @@ WEEK 4 :
 
 05 Jan 2026 (Monday) :
 
+• Implemented Invoice Generator for Freelancers using String parsing and methods and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+
+• Created Cafeteria Menu App using arrays and user input selection and methods and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+  
+• Developed Student Score Analyzer with average, highest, and lowest score calculation and methods and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+  
+• Applied Exception Handling for invalid invoice formats and invalid student scores and methods and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+  
+• Used core Java concepts like Arrays, Strings, Methods, Encapsulation, Interface, and Abstract Classes and solved questions on these topics and pushed it to the oops-practice branch in the gcr-codebase folder on GitHub.
+
+• Solved Problems Of Leetcode and pushed it to the oops-practice branch in the leet-code-codebased folder on GitHub.
+
+
+06 Jan 2026 (Tuesday) :
+
+• Implemented Phone Contact Organizer using ArrayList with add, delete, search, and phone number validation and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+ 
+• Developed Online Quiz Result Processor using String arrays and List with score calculation and exception handling and pushed it to the oops-practice branch in the scenario-based folder on GitHub. 
+
+• Created Student Report Generator using arrays and List with average, grade calculation, and mark validation and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+
+• Designed Library Management System with book search, checkout functionality, and custom exception handling and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+
+• Solved Problems Of Leetcode and pushed it to the oops-practice branch in the leet-code-codebased folder on GitHub.
+
+
+07 Jan 2026 (Wednesday) :
+
+• Studied Data Structure fundamentals including features, types, and Linked Lists (Singly, Doubly, Circular).
+  
+• Developed Cab Booking / Ride Management System with ride booking, driver assignment, fare calculation, and exception handling and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+
+• Implemented Online Banking System supporting account creation, balance check, fund transfer, and transaction history and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+
+• Applied OOP, Inheritance, Abstraction, Polymorphism, Interfaces, Exception Handling, and Multithreading concepts and pushed it to the oops-practice branch in the scenario-based folder on GitHub.
+
+• Solved Problems Of Leetcode and pushed it to the oops-practice branch in the leet-code-codebased folder on GitHub.
+
+
+08 Jan 2026 (Thursday) : 
+
