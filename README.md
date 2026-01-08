@@ -331,4 +331,13 @@ WEEK 4 :
 
 
 08 Jan 2026 (Thursday) : 
+ • Singly Linked List implementation and pushed it to the dsa-practice branch in the gcr-codebase folder on GitHub.
+
+• Doubly Linked List implementation and pushed it to the dsa-practice branch in the gcr-codebase folder on GitHub.
+
+• Circular Linked List implementation and pushed it to the dsa-practice branch in the gcr-codebase folder on GitHub.
+
+• Linked List operations: insertion, deletion, traversal, and searching and pushed it to the dsa-practice branch in the gcr-codebase folder on GitHub.
+
+• Solved Problems Of Leetcode and pushed it to the oops-practice branch in the leet-code-codebase folder on GitHub.
 
