@@ -187,6 +187,31 @@ BridgeLabz-Training/
 - Implemented Circular Linked List
 - Practiced insertion, deletion, traversal, and searching
 
+### 🗓️ 09 Jan 2026 (Friday)
+- Implemented **Hospital Patient Management System (CRUD)**:
+  - Classes: Patient, Doctor, Bill
+  - Encapsulation using getters and setters
+  - Abstraction using `IPayable` interface
+  - Inheritance: `InPatient`, `OutPatient` → `Patient`
+  - Polymorphism using overridden `displayInfo()` method
+
+- Developed **Vehicle Rental Application (CRUD)**:
+  - Classes: Vehicle, Bike, Car, Truck, Customer
+  - Used `protected` access modifiers
+  - Implemented `IRentable` interface with `calculateRent(int days)`
+
+- Built **Flight Booking System (CRUD)**:
+  - Used Array to store available flights
+  - Stored bookings using List
+  - Case-insensitive flight search using String operations
+  - Separate methods for search, booking, and display
+
+- Solved **LeetCode Problems**:
+  - 3Sum Closest
+  - Plus One
+
+- Pushed all completed work to respective GitHub branches
+
 ---
 
 ## 🌟 Key Skills & Highlights
