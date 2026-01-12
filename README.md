@@ -210,7 +210,21 @@ BridgeLabz-Training/
   - 3Sum Closest
   - Plus One
 
-- Pushed all completed work to respective GitHub branches
+---
+
+# 📅 WEEK 5 – Advanced OOP, Collections & DSA
+
+### 🗓️ 12 Jan 2026 (Monday)
+- Implemented scenario-based systems using Core Java.
+- Applied OOP concepts: Abstraction, Inheritance, Encapsulation, Polymorphism, Interfaces
+- Solved OOP projects: Banking, E-Commerce, Hospital, Library, Cab Booking, Hotel, Voting, Digital Wallet
+- Implemented DSA scenarios: Circular Linked List + Queue, Insertion Sort, Quick Sort
+- Solved LeetCode problems: Move Zeroes, Third Maximum Number
+
+
+- Pushed all completed work to respective GitHub branches.
+
+### 🗓️ 13 Jan 2026 (Tuesday)
 
 ---
 
