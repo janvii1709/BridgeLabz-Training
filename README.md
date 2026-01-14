@@ -226,6 +226,50 @@ BridgeLabz-Training/
 
 ### 🗓️ 13 Jan 2026 (Tuesday)
 
+### ✅ Submission & Learning Summary
+
+On this day, the following topics and practical implementations were completed and submitted as part of the training program:
+
+---
+
+### 🔹 Data Structures Implementation
+- Implemented **Stack** problems using recursion and auxiliary data structures.
+- Implemented **Queue** problems including:
+  - Queue using two stacks
+  - Circular Tour Problem
+  - Designed and implemented a **Custom HashMap**:
+  - Insertion, deletion, and retrieval operations
+  - Collision handling using **separate chaining**
+  - Studied and implemented **Hashing Function** concepts for efficient data storage and retrieval.
+
+---
+
+### 🔹 Git & Version Control Practices
+- Demonstrated effective use of **Git branching**
+- Performed **branch merging**
+- Handled and resolved **merge conflicts**
+- Followed proper commit messages and clean repository structure.
+
+---
+
+### 🔹 Sorting Algorithms (Study & Understanding)
+Studied the working, logic, and use cases of the following sorting algorithms:
+- **Bubble Sort**
+- **Insertion Sort**
+- **Merge Sort**
+- **Quick Sort**
+
+Focus was given on:
+- Algorithm logic
+- Time and space complexity
+- Comparison between different sorting techniques
+
+---
+
+### 🎯 Outcome
+This day strengthened understanding of **core data structures**, **problem-solving using stacks and queues**, **hashing concepts**, and **real-world Git workflows**, along with foundational knowledge of **sorting algorithms**.
+
+
 ---
 
 ## 🌟 Key Skills & Highlights
