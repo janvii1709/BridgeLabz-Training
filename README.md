@@ -269,9 +269,28 @@ Focus was given on:
 ### 🎯 Outcome
 This day strengthened understanding of **core data structures**, **problem-solving using stacks and queues**, **hashing concepts**, and **real-world Git workflows**, along with foundational knowledge of **sorting algorithms**.
 
-
 ---
 
+### 📅 14 Jan 2026 (Wednesday)
+
+## ✅ Submission of Sorting Algorithms
+Implemented and tested the following sorting algorithms:
+
+- Bubble Sort  
+- Insertion Sort  
+- Merge Sort  
+- Quick Sort  
+
+## 🧩 LeetCode Practice
+Solved the following LeetCode problems:
+
+1. Find the Difference  
+2. Word Pattern  
+
+✔ Strengthened understanding of sorting techniques and hash map–based pattern matching problems.
+
+
+---
 ## 🌟 Key Skills & Highlights
 
 - Core Java Fundamentals
