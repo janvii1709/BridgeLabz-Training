@@ -259,6 +259,13 @@ Studied the working, logic, and use cases of the following sorting algorithms:
 - **Merge Sort**
 - **Quick Sort**
 
+## 🧩 LeetCode Practice
+Solved the following LeetCode problems:
+
+1. Baseball Game
+2. Single Number 
+
+
 Focus was given on:
 - Algorithm logic
 - Time and space complexity
@@ -269,7 +276,6 @@ Focus was given on:
 ### 🎯 Outcome
 This day strengthened understanding of **core data structures**, **problem-solving using stacks and queues**, **hashing concepts**, and **real-world Git workflows**, along with foundational knowledge of **sorting algorithms**.
 
----
 
 ### 📅 14 Jan 2026 (Wednesday)
 
@@ -289,6 +295,31 @@ Solved the following LeetCode problems:
 
 ✔ Strengthened understanding of sorting techniques and hash map–based pattern matching problems.
 
+
+### 📅 15 Jan 2026 (Thursday)
+
+## ✅ Sorting & Algorithm Practice
+Solved problems on various **sorting algorithms**.  
+
+## 🧩 Java Concepts Learned
+Studied and practiced the following concepts:  
+- **Linear Search** and **Binary Search**  
+- **StringBuilder** and **StringBuffer**  
+- **BufferedReader**, **FileReader**, **InputStreamReader**  
+
+## 🏗 4-Layer Architecture in Java
+Learned about the 4-layer architecture:  
+1. **Presentation Layer** – Handles UI and user interactions.  
+2. **Business Layer** – Contains business logic and rules.  
+3. **Persistence Layer** – Manages data access and database operations.  
+4. **Database Layer** – Stores the actual data.  
+
+## 🧩 LeetCode Practice
+Solved the following LeetCode problems:  
+1. Add Strings  
+2. Keyboard Row  
+
+✔ Strengthened understanding of Java I/O, string manipulation, search algorithms, and layered application architecture.
 
 ---
 ## 🌟 Key Skills & Highlights
