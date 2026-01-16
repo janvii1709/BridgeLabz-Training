@@ -2,19 +2,21 @@ import java.util.Scanner;
 
 class TextEditor {
 
-    // Text class representing a state
+    // Node class (Text State)
     private class Text {
         String content;
         Text prev, next;
 
         Text(String content) {
             this.content = content;
+            this.prev = null;
+            this.next = null;
         }
     }
 
-    private Text head;       // Oldest state
-    private Text current;    // Current state
-    private int size = 0;
+    private Text head;        // Oldest state
+    private Text current;     // Current state
+    private int size;
     private final int MAX_HISTORY = 10;
 
     // Constructor → initial empty state
@@ -24,20 +26,25 @@ class TextEditor {
         size = 1;
     }
 
-    // Add new text state (APPEND text)
+    // ADD NEW STATE (TYPE TEXT)
     public void addState(String newText) {
         String updatedText = current.content + newText;
         Text newState = new Text(updatedText);
 
         // Remove redo history
-        current.next = null;
+        if (current.next != null) {
+            current.next.prev = null;
+            current.next = null;
+            size = calculateSize();
+        }
 
+        // Add new state
         newState.prev = current;
         current.next = newState;
         current = newState;
         size++;
 
-        // Maintain max history size
+        // Maintain MAX_HISTORY
         if (size > MAX_HISTORY) {
             head = head.next;
             head.prev = null;
@@ -45,7 +52,7 @@ class TextEditor {
         }
     }
 
-    // Undo
+    // UNDO
     public void undo() {
         if (current.prev != null) {
             current = current.prev;
@@ -55,7 +62,7 @@ class TextEditor {
         }
     }
 
-    // Redo
+    // REDO
     public void redo() {
         if (current.next != null) {
             current = current.next;
@@ -65,22 +72,33 @@ class TextEditor {
         }
     }
 
-    // Show current text
+    // SHOW CURRENT TEXT
     public void showCurrentState() {
         System.out.println("Current text: " + current.content);
     }
 
-    // Main method
+    // Helper method to recalculate size
+    private int calculateSize() {
+        int count = 0;
+        Text temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+    // MAIN METHOD
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TextEditor editor = new TextEditor();
 
         System.out.println("Welcome to Simple Text Editor!");
-        System.out.println("type      -> Type new text");
-        System.out.println("undo      -> Undo last change");
-        System.out.println("redo      -> Redo last undone change");
-        System.out.println("show      -> Show current text");
-        System.out.println("exit      -> Exit editor");
+        System.out.println("type  -> Type new text");
+        System.out.println("undo  -> Undo last change");
+        System.out.println("redo  -> Redo last undone change");
+        System.out.println("show  -> Show current text");
+        System.out.println("exit  -> Exit editor");
 
         while (true) {
             System.out.print("\nEnter command: ");
@@ -98,6 +116,7 @@ class TextEditor {
                 case "show" -> editor.showCurrentState();
                 case "exit" -> {
                     System.out.println("Exiting editor.");
+                    sc.close();
                     return;
                 }
                 default -> System.out.println("Invalid command! Try again.");

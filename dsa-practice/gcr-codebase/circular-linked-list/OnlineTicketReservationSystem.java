@@ -1,77 +1,96 @@
 import java.util.Scanner;
 
-// Node class representing a Ticket
+// Node class
 class Ticket {
-    int ticketID;
-    String customerName;
-    String movieName;
-    String seatNumber;
-    String bookingTime;
+    private int ticketId;
+    private String customerName;
+    private String movieName;
+    private String seatNumber;
+    private String bookingTime;
     Ticket next;
 
-    public Ticket(int ticketID, String customerName, String movieName, String seatNumber, String bookingTime) {
-        this.ticketID = ticketID;
+    public Ticket(int ticketId, String customerName, String movieName,
+                  String seatNumber, String bookingTime) {
+        this.ticketId = ticketId;
         this.customerName = customerName;
         this.movieName = movieName;
         this.seatNumber = seatNumber;
         this.bookingTime = bookingTime;
         this.next = null;
     }
+
+    public int getTicketId() {
+        return ticketId;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public String getMovieName() {
+        return movieName;
+    }
+
+    public String getDetails() {
+        return ticketId + " | " + customerName + " | " +
+               movieName + " | " + seatNumber + " | " + bookingTime;
+    }
 }
 
-// Circular Linked List for Ticket Reservation System
+// Circular Linked List
 class TicketReservationSystem {
-    private Ticket tail; // tail points to the last ticket
+
+    private Ticket tail;
 
     public TicketReservationSystem() {
         tail = null;
     }
 
-    // Add ticket at the end
+    // Add ticket
     public void addTicket(Ticket newTicket) {
         if (tail == null) {
             tail = newTicket;
-            tail.next = tail; // circular link
+            tail.next = tail;
         } else {
-            newTicket.next = tail.next; // new ticket points to head
-            tail.next = newTicket; // old tail points to new ticket
-            tail = newTicket; // update tail
+            newTicket.next = tail.next;
+            tail.next = newTicket;
+            tail = newTicket;
         }
-        System.out.println("Ticket added for " + newTicket.customerName);
+        System.out.println("Ticket booked successfully!");
     }
 
-    // Remove ticket by Ticket ID
-    public void removeTicket(int ticketID) {
+    // Remove ticket by ID
+    public void removeTicket(int ticketId) {
         if (tail == null) {
-            System.out.println("No tickets to remove.");
+            System.out.println("No tickets available.");
             return;
         }
 
-        Ticket current = tail.next; // head
+        Ticket current = tail.next;
         Ticket prev = tail;
-        boolean found = false;
 
         do {
-            if (current.ticketID == ticketID) {
-                found = true;
-                if (current == tail && current == tail.next) { // only one ticket
+            if (current.getTicketId() == ticketId) {
+
+                if (current == tail && current == tail.next) {
                     tail = null;
                 } else {
                     prev.next = current.next;
                     if (current == tail) {
-                        tail = prev; // update tail if removing last
+                        tail = prev;
                     }
                 }
-                System.out.println("Ticket removed: " + ticketID);
-                break;
+
+                System.out.println("Ticket cancelled: " + ticketId);
+                return;
             }
+
             prev = current;
             current = current.next;
+
         } while (current != tail.next);
 
-        if (!found) {
-            System.out.println("Ticket ID not found: " + ticketID);
-        }
+        System.out.println("Ticket ID not found.");
     }
 
     // Display all tickets
@@ -81,17 +100,16 @@ class TicketReservationSystem {
             return;
         }
 
-        Ticket current = tail.next; // head
-        System.out.println("Current Tickets:");
+        Ticket current = tail.next;
+        System.out.println("Booked Tickets:");
         do {
-            System.out.println(current.ticketID + " | " + current.customerName + " | " + current.movieName +
-                    " | " + current.seatNumber + " | " + current.bookingTime);
+            System.out.println(current.getDetails());
             current = current.next;
         } while (current != tail.next);
     }
 
-    // Search tickets by Customer Name or Movie Name
-    public void searchTicket(String keyword) {
+    // Search ticket by customer or movie
+    public void searchTicket(String key) {
         if (tail == null) {
             System.out.println("No tickets booked.");
             return;
@@ -99,26 +117,27 @@ class TicketReservationSystem {
 
         Ticket current = tail.next;
         boolean found = false;
+
         do {
-            if (current.customerName.equalsIgnoreCase(keyword) || current.movieName.equalsIgnoreCase(keyword)) {
-                System.out.println("Found Ticket: " + current.ticketID + " | " + current.customerName +
-                        " | " + current.movieName + " | " + current.seatNumber + " | " + current.bookingTime);
+            if (current.getCustomerName().equalsIgnoreCase(key) ||
+                current.getMovieName().equalsIgnoreCase(key)) {
+                System.out.println(current.getDetails());
                 found = true;
             }
             current = current.next;
         } while (current != tail.next);
 
         if (!found) {
-            System.out.println("No ticket found for: " + keyword);
+            System.out.println("No matching ticket found.");
         }
     }
 
-    // Count total tickets
+    // Count tickets
     public int countTickets() {
         if (tail == null) return 0;
 
-        Ticket current = tail.next;
         int count = 0;
+        Ticket current = tail.next;
         do {
             count++;
             current = current.next;
@@ -130,7 +149,9 @@ class TicketReservationSystem {
 
 // Main class
 public class OnlineTicketReservationSystem {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         TicketReservationSystem system = new TicketReservationSystem();
         int choice;
@@ -138,49 +159,64 @@ public class OnlineTicketReservationSystem {
         do {
             System.out.println("\n--- Online Ticket Reservation System ---");
             System.out.println("1. Book Ticket");
-            System.out.println("2. Cancel Ticket by ID");
-            System.out.println("3. Display All Tickets");
-            System.out.println("4. Search Ticket by Customer/Movie");
-            System.out.println("5. Count Total Tickets");
+            System.out.println("2. Cancel Ticket");
+            System.out.println("3. Display Tickets");
+            System.out.println("4. Search Ticket");
+            System.out.println("5. Count Tickets");
             System.out.println("0. Exit");
-            System.out.print("Enter your choice: ");
+            System.out.print("Enter choice: ");
+
             choice = sc.nextInt();
-            sc.nextLine(); // consume newline
+            sc.nextLine();
 
             switch (choice) {
-                case 1 -> {
-                    System.out.print("Enter Ticket ID: ");
+
+                case 1:
+                    System.out.print("Ticket ID: ");
                     int id = sc.nextInt();
                     sc.nextLine();
-                    System.out.print("Enter Customer Name: ");
+
+                    System.out.print("Customer Name: ");
                     String customer = sc.nextLine();
-                    System.out.print("Enter Movie Name: ");
+
+                    System.out.print("Movie Name: ");
                     String movie = sc.nextLine();
-                    System.out.print("Enter Seat Number: ");
+
+                    System.out.print("Seat Number: ");
                     String seat = sc.nextLine();
-                    System.out.print("Enter Booking Time: ");
+
+                    System.out.print("Booking Time: ");
                     String time = sc.nextLine();
 
-                    Ticket ticket = new Ticket(id, customer, movie, seat, time);
-                    system.addTicket(ticket);
-                }
-                case 2 -> {
-                    System.out.print("Enter Ticket ID to cancel: ");
-                    int id = sc.nextInt();
-                    sc.nextLine();
-                    system.removeTicket(id);
-                }
-                case 3 -> system.displayTickets();
-                case 4 -> {
-                    System.out.print("Enter Customer Name or Movie Name to search: ");
-                    String keyword = sc.nextLine();
-                    system.searchTicket(keyword);
-                }
-                case 5 -> System.out.println("Total Tickets Booked: " + system.countTickets());
-                case 0 -> System.out.println("Exiting system...");
-                default -> System.out.println("Invalid choice! Try again.");
-            }
-        } while (choice != 0);
+                    system.addTicket(new Ticket(id, customer, movie, seat, time));
+                    break;
 
+                case 2:
+                    System.out.print("Enter Ticket ID: ");
+                    system.removeTicket(sc.nextInt());
+                    break;
+
+                case 3:
+                    system.displayTickets();
+                    break;
+
+                case 4:
+                    System.out.print("Enter Customer or Movie Name: ");
+                    system.searchTicket(sc.nextLine());
+                    break;
+
+                case 5:
+                    System.out.println("Total Tickets: " + system.countTickets());
+                    break;
+
+                case 0:
+                    System.out.println("Exiting...");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice!");
+            }
+
+        } while (choice != 0);
     }
 }
