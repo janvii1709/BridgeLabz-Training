@@ -321,6 +321,25 @@ Solved the following LeetCode problems:
 
 ✔ Strengthened understanding of Java I/O, string manipulation, search algorithms, and layered application architecture.
 
+### 📅 16 Jan 2026 (Friday)
+
+**Topics Studied:**
+- StringBuilder
+- StringBuffer
+- FileReader
+- InputStreamReader
+- Linear Search
+- Binary Search
+
+**LeetCode Problems Solved:**
+1. Detect Capital
+2. Most Common Word
+
+**Other Work:**
+- Studied about the various layers in software development.
+- Started working on the Address Book problem.
+
+
 ---
 ## 🌟 Key Skills & Highlights
 
