@@ -1,0 +1,3 @@
+Hello World
+Java InputStreamReader
+नमस्ते
