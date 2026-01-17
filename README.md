@@ -340,7 +340,33 @@ Solved the following LeetCode problems:
 - Started working on the Address Book problem.
 
 
+### 📅 17 Jan 2026 (Saturday)
+
+## 📌 Topics Covered
+
+### 📝 String Handling
+- Worked with **StringBuilder** and **StringBuffer** for efficient string operations and performance comparison.
+
+### 📂 File Handling
+- Practiced **FileReader** and **InputStreamReader** for reading/writing files and handling user input.
+
+### 🔍 Searching Algorithms
+- Solved problems using **Linear Search** and **Binary Search**.
+
+### 🏷 Projects
+- Developed a **Java-based Address Book** up to **UC7**, applying **OOP concepts**.
+
+### 💻 LeetCode
+- Solved problems like **Additive Number** and **Excel Column Title** using string manipulations.
+
 ---
+
+**📝 Notes:**  
+- Focused on **user input handling**, **string operations**, and **algorithmic logic**.  
+- Implemented all programs in **Java**, handling edge cases effectively.
+
+---
+
 ## 🌟 Key Skills & Highlights
 
 - Core Java Fundamentals
