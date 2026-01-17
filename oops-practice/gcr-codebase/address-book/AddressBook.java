@@ -7,14 +7,13 @@ public class AddressBook {
     // Adding the  new contact to the address book
     public void addContact(Contact contact) {
         contacts.add(contact);
-        System.out.println("\nContacts are added successfully!");
+        System.out.println("\nContact added successfully!");
     }
-
-    // Displaying all the contacts of the address book
+    // Displaying all the contacts in the address book
     public void displayContacts() {
-        System.out.println("\n--- Address Book Contact Deatils ---");
+        System.out.println("\n--- Address Book Contact Details ---");
         if (contacts.isEmpty()) {
-            System.out.println("No contacts are available.");
+            System.out.println("No contact is available.");
             return;
         }
         for (Contact contact : contacts) {
@@ -29,7 +28,7 @@ public class AddressBook {
             if (contact.getFirstName().equalsIgnoreCase(firstName) &&
                 contact.getLastName().equalsIgnoreCase(lastName)) {
                 found = true;
-                System.out.println("\nEditing the Contact: " + firstName + " " + lastName);
+                System.out.println("\nEditing The Contact: " + firstName + " " + lastName);
                 System.out.println("Enter the new Address (current: " + contact.getAddress() + "):");
                 contact.setAddress(sc.nextLine());
                 System.out.println("Enter the new City (current: " + contact.getCity() + "):");
@@ -42,7 +41,7 @@ public class AddressBook {
                 contact.setPhoneNumber(sc.nextLine());
                 System.out.println("Enter the new Email (current: " + contact.getEmail() + "):");
                 contact.setEmail(sc.nextLine());
-                System.out.println("\nContact are now updated successfully!");
+                System.out.println("\nContact is updated successfully!");
                 break;
             }
         }
@@ -50,8 +49,7 @@ public class AddressBook {
             System.out.println("Contact is not found with name: " + firstName + " " + lastName);
         }
     }
-
-    // Deleting a contact by name in the address book
+    // Deleting the contact by name from the address book
     public void deleteContact(String firstName, String lastName) {
         Iterator<Contact> iterator = contacts.iterator();
         boolean found = false;
