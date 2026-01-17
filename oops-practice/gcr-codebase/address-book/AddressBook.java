@@ -2,6 +2,10 @@ import java.util.*;
 public class AddressBook {
     private List<Contact> contacts = new ArrayList<>();
     public void addContact(Contact contact) {
+        if (contacts.contains(contact)) {
+            System.out.println("Duplicate Contact found! Contact already exists.");
+            return;
+        }
         contacts.add(contact);
         System.out.println("The Contact added successfully!");
     }
@@ -17,8 +21,7 @@ public class AddressBook {
     }
     public void editContact(String firstName, String lastName, Scanner sc) {
         for (Contact contact : contacts) {
-            if (contact.getFirstName().equalsIgnoreCase(firstName)
-                    && contact.getLastName().equalsIgnoreCase(lastName)) {
+            if (contact.getFirstName().equalsIgnoreCase(firstName)&& contact.getLastName().equalsIgnoreCase(lastName)) {
                 System.out.println("Enter the new Address:");
                 contact.setAddress(sc.nextLine());
                 System.out.println("Enter the new City:");
@@ -31,24 +34,22 @@ public class AddressBook {
                 contact.setPhoneNumber(sc.nextLine());
                 System.out.println("Enter the new Email:");
                 contact.setEmail(sc.nextLine());
-
-                System.out.println("Contact is updated successfully!");
+                System.out.println("The Contact is updated successfully!");
                 return;
             }
         }
-        System.out.println("Contact is not found.");
+        System.out.println("The Contact is not found.");
     }
     public void deleteContact(String firstName, String lastName) {
         Iterator<Contact> iterator = contacts.iterator();
         while (iterator.hasNext()) {
             Contact contact = iterator.next();
-            if (contact.getFirstName().equalsIgnoreCase(firstName)
-                    && contact.getLastName().equalsIgnoreCase(lastName)) {
+            if (contact.getFirstName().equalsIgnoreCase(firstName)&& contact.getLastName().equalsIgnoreCase(lastName)) {
                 iterator.remove();
-                System.out.println("Contact is deleted successfully!");
+                System.out.println("The Contact is deleted successfully!");
                 return;
             }
         }
-        System.out.println("Contact is not found.");
+        System.out.println("The Contact is not found.");
     }
 }

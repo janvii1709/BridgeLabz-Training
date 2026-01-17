@@ -10,6 +10,11 @@ public class AddressBookMain {
             System.out.println("2. Select The Address Book");
             System.out.println("3. Exit");
             System.out.print("Enter choice: ");
+            if (!sc.hasNextInt()) {
+                System.out.println("Invalid input! Please enter a number.");
+                sc.nextLine();
+                continue;
+            }
             int choice = sc.nextInt();
             sc.nextLine();
             switch (choice) {
@@ -20,10 +25,9 @@ public class AddressBookMain {
                     selectAddressBook(sc);
                     break;
                 case 3:
-                    System.out.println("Exiting Program. ThankYou ! Have A Nice Day ! ");
+                    System.out.println("Exiting Program. Thank You! Have A Nice Day!");
                     sc.close();
                     return;
-
                 default:
                     System.out.println("Invalid choice!");
             }
@@ -52,18 +56,39 @@ public class AddressBookMain {
     private static void manageAddressBook(Scanner sc, AddressBook addressBook) {
         boolean running = true;
         while (running) {
-            System.out.println("\n1. Add The Contact");
+            System.out.println("\nChoose an option:");
+            System.out.println("1. Add The Contact");
             System.out.println("2. Display The Contacts");
             System.out.println("3. Edit The Contact");
             System.out.println("4. Delete The Contact");
             System.out.println("5. Back");
             System.out.print("Enter choice: ");
+            if (!sc.hasNextInt()) {
+                System.out.println("Invalid input!");
+                sc.nextLine();
+                continue;
+            }
             int choice = sc.nextInt();
             sc.nextLine();
             switch (choice) {
                 case 1:
-                    Contact contact = createContact(sc);
-                    addressBook.addContact(contact);
+                    boolean adding = true;
+                    while (adding) {
+                        Contact contact = createContact(sc);
+                        addressBook.addContact(contact);
+                        while (true) {
+                            System.out.print("Do you want to add another contact? (yes/no): ");
+                            String more = sc.nextLine().trim();// We are using trim() to remove any leading or trailing spaces
+                            if (more.equalsIgnoreCase("yes")) {
+                                break;
+                            } else if (more.equalsIgnoreCase("no")) {
+                                adding = false;
+                                break;
+                            } else {
+                                System.out.println("Invalid input! Please type yes or no.");
+                            }
+                        }
+                    }
                     break;
                 case 2:
                     addressBook.displayContacts();
@@ -107,7 +132,6 @@ public class AddressBookMain {
         String phone = sc.nextLine();
         System.out.print("Email: ");
         String email = sc.nextLine();
-
         return new Contact(firstName, lastName, address, city, state, zip, phone, email);
     }
 }
