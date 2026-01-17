@@ -1,19 +1,13 @@
 import java.util.*;
 public class AddressBook {
-    private List<Contact> contacts;
-    public AddressBook() {
-        contacts = new ArrayList<>();
-    }
-    // Adding the  new contact to the address book
+    private List<Contact> contacts = new ArrayList<>();
     public void addContact(Contact contact) {
         contacts.add(contact);
-        System.out.println("\nContact added successfully!");
+        System.out.println("The Contact added successfully!");
     }
-    // Displaying all the contacts in the address book
     public void displayContacts() {
-        System.out.println("\n--- Address Book Contact Details ---");
         if (contacts.isEmpty()) {
-            System.out.println("No contact is available.");
+            System.out.println("No contact is found.");
             return;
         }
         for (Contact contact : contacts) {
@@ -21,50 +15,40 @@ public class AddressBook {
             System.out.println("----------------------------");
         }
     }
-    // Editing the existing contact by name in the address book
     public void editContact(String firstName, String lastName, Scanner sc) {
-        boolean found = false;
         for (Contact contact : contacts) {
-            if (contact.getFirstName().equalsIgnoreCase(firstName) &&
-                contact.getLastName().equalsIgnoreCase(lastName)) {
-                found = true;
-                System.out.println("\nEditing The Contact: " + firstName + " " + lastName);
-                System.out.println("Enter the new Address (current: " + contact.getAddress() + "):");
+            if (contact.getFirstName().equalsIgnoreCase(firstName)
+                    && contact.getLastName().equalsIgnoreCase(lastName)) {
+                System.out.println("Enter the new Address:");
                 contact.setAddress(sc.nextLine());
-                System.out.println("Enter the new City (current: " + contact.getCity() + "):");
+                System.out.println("Enter the new City:");
                 contact.setCity(sc.nextLine());
-                System.out.println("Enter the new State (current: " + contact.getState() + "):");
+                System.out.println("Enter the new State:");
                 contact.setState(sc.nextLine());
-                System.out.println("Enter the new ZIP (current: " + contact.getZip() + "):");
+                System.out.println("Enter the new ZIP:");
                 contact.setZip(sc.nextLine());
-                System.out.println("Enter the new Phone Number (current: " + contact.getPhoneNumber() + "):");
+                System.out.println("Enter the new Phone:");
                 contact.setPhoneNumber(sc.nextLine());
-                System.out.println("Enter the new Email (current: " + contact.getEmail() + "):");
+                System.out.println("Enter the new Email:");
                 contact.setEmail(sc.nextLine());
-                System.out.println("\nContact is updated successfully!");
-                break;
+
+                System.out.println("Contact is updated successfully!");
+                return;
             }
         }
-        if (!found) {
-            System.out.println("Contact is not found with name: " + firstName + " " + lastName);
-        }
+        System.out.println("Contact is not found.");
     }
-    // Deleting the contact by name from the address book
     public void deleteContact(String firstName, String lastName) {
         Iterator<Contact> iterator = contacts.iterator();
-        boolean found = false;
         while (iterator.hasNext()) {
             Contact contact = iterator.next();
-            if (contact.getFirstName().equalsIgnoreCase(firstName) &&
-                contact.getLastName().equalsIgnoreCase(lastName)) {
+            if (contact.getFirstName().equalsIgnoreCase(firstName)
+                    && contact.getLastName().equalsIgnoreCase(lastName)) {
                 iterator.remove();
-                System.out.println("\nContact is deleted successfully: " + firstName + " " + lastName);
-                found = true;
-                break;
+                System.out.println("Contact is deleted successfully!");
+                return;
             }
         }
-        if (!found) {
-            System.out.println("Contact is not found with name: " + firstName + " " + lastName);
-        }
+        System.out.println("Contact is not found.");
     }
 }
