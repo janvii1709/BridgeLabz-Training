@@ -9,16 +9,16 @@ public class AddressBookMain {
             System.out.println("\nChoose an option:");
             System.out.println("1. Add New Contact");
             System.out.println("2. Display All Contacts");
-            System.out.println("3. Exit");
+            System.out.println("3. Edit Contact");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
-            // Check if input is an integer or not 
             if (!sc.hasNextInt()) {
                 System.out.println("Invalid choice! Please enter a number.");
-                sc.nextLine(); // consume invalid input
+                sc.nextLine(); // Consume invalid input
                 continue;
             }
             int choice = sc.nextInt();
-            sc.nextLine(); //We are using this for Consuming the newline character 
+            sc.nextLine(); //Used for consuming new line character after nextInt()
             switch (choice) {
                 case 1:
                     Contact contact = createContact(sc);
@@ -27,18 +27,22 @@ public class AddressBookMain {
                 case 2:
                     addressBook.displayContacts();
                     break;
-
                 case 3:
+                    System.out.print("Enter First Name of contact to edit: ");
+                    String firstName = sc.nextLine();
+                    System.out.print("Enter Last Name of contact to edit: ");
+                    String lastName = sc.nextLine();
+                    addressBook.editContact(firstName, lastName, sc);
+                    break;
+                case 4:
                     running = false;
                     System.out.println("Exiting Address Book. Goodbye!");
                     break;
-
                 default:
-                    System.out.println("Invalid choice! Please enter 1, 2, or 3.");
+                    System.out.println("Invalid choice! Please enter 1, 2, 3, or 4.");
             }
         }
     }
-    // Method to take input and create a new contact
     private static Contact createContact(Scanner sc) {
         System.out.println("Enter The First Name: ");
         String firstName = sc.nextLine();
@@ -50,7 +54,7 @@ public class AddressBookMain {
         String city = sc.nextLine();
         System.out.println("Enter The State: ");
         String state = sc.nextLine();
-        System.out.println("Enter The ZIP: ");
+        System.out.println("Enter TheZIP: ");
         String zip = sc.nextLine();
         System.out.println("Enter The Phone Number: ");
         String phoneNumber = sc.nextLine();
