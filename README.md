@@ -367,6 +367,19 @@ Solved the following LeetCode problems:
 
 ---
 
+# 📅 WEEK 6 – DSA AND ADVANCED DSA
+
+### 📅 19 Jan 2026 (Monday)
+
+✅ **Address Book:** Solved up to **UC12**  
+📚 **Revision:** Core Java fundamentals & OOPs practice  
+🧩 **LeetCode Solved:**  
+   1. **Integer Square Root**  
+   2. **Permutation Sequence**
+
+
+---
+
 ## 🌟 Key Skills & Highlights
 
 - Core Java Fundamentals
