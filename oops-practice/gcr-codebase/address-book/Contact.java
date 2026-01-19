@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Objects;
+
 public class Contact {
     private String firstName;
     private String lastName;
@@ -8,6 +9,7 @@ public class Contact {
     private String zip;
     private String phoneNumber;
     private String email;
+
     public Contact(String firstName, String lastName, String address,String city, String state, String zip,String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -18,6 +20,7 @@ public class Contact {
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
     public String getFirstName() { return firstName; }
     public void setFirstName(String firstName) { this.firstName = firstName; }
     public String getLastName() { return lastName; }
@@ -34,6 +37,7 @@ public class Contact {
     public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -41,10 +45,12 @@ public class Contact {
         Contact other = (Contact) obj;
         return firstName.equalsIgnoreCase(other.firstName) &&lastName.equalsIgnoreCase(other.lastName);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(firstName.toLowerCase(), lastName.toLowerCase());
     }
+
     @Override
     public String toString() {
         return "First Name: " + firstName + "\n" +"Last Name: " + lastName + "\n" +"Address: " + address + "\n" +"City: " + city + "\n" +"State: " + state + "\n" +"ZIP: " + zip + "\n" +"Phone Number: " + phoneNumber + "\n" +"Email: " + email + "\n";

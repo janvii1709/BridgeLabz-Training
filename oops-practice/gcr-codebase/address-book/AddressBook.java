@@ -1,87 +1,100 @@
 import java.util.*;
+import java.util.stream.Collectors;
+
 public class AddressBook {
     private List<Contact> contacts = new ArrayList<>();
-    private Map<String, List<Contact>> cityDictionary = new HashMap<>();
-    private Map<String, List<Contact>> stateDictionary = new HashMap<>();
+
     public void addContact(Contact contact) {
         if (contacts.contains(contact)) {
             System.out.println("Duplicate Contact found! Contact already exists.");
             return;
         }
         contacts.add(contact);
-        cityDictionary.computeIfAbsent(contact.getCity().toLowerCase(), k -> new ArrayList<>()).add(contact);
-        stateDictionary.computeIfAbsent(contact.getState().toLowerCase(), k -> new ArrayList<>()).add(contact);
-        System.out.println("The Contact added successfully!");
+        System.out.println("Contact added successfully!");
     }
+
     public void displayContacts() {
         if (contacts.isEmpty()) {
-            System.out.println("No contact is found.");
+            System.out.println("No contacts found.");
             return;
         }
-        for (Contact contact : contacts) {
-            System.out.println(contact);
+        for (Contact c : contacts) {
+            System.out.println(c);
             System.out.println("----------------------------");
         }
     }
+
     public void editContact(String firstName, String lastName, Scanner sc) {
         for (Contact contact : contacts) {
-            if (contact.getFirstName().equalsIgnoreCase(firstName)&& contact.getLastName().equalsIgnoreCase(lastName)) {
-                cityDictionary.get(contact.getCity().toLowerCase()).remove(contact);
-                stateDictionary.get(contact.getState().toLowerCase()).remove(contact);
-                System.out.println("Enter the new Address:");
+            if (contact.getFirstName().equalsIgnoreCase(firstName)
+                    && contact.getLastName().equalsIgnoreCase(lastName)) {
+
+                System.out.print("Enter new Address: ");
                 contact.setAddress(sc.nextLine());
-                System.out.println("Enter the new City:");
+                System.out.print("Enter new City: ");
                 contact.setCity(sc.nextLine());
-                System.out.println("Enter the new State:");
+                System.out.print("Enter new State: ");
                 contact.setState(sc.nextLine());
-                System.out.println("Enter the new ZIP:");
+                System.out.print("Enter new ZIP: ");
                 contact.setZip(sc.nextLine());
-                System.out.println("Enter the new Phone:");
+                System.out.print("Enter new Phone: ");
                 contact.setPhoneNumber(sc.nextLine());
-                System.out.println("Enter the new Email:");
+                System.out.print("Enter new Email: ");
                 contact.setEmail(sc.nextLine());
-                cityDictionary.computeIfAbsent(contact.getCity().toLowerCase(), k -> new ArrayList<>()).add(contact);
-                stateDictionary.computeIfAbsent(contact.getState().toLowerCase(), k -> new ArrayList<>()).add(contact);
-                System.out.println("The Contact is updated successfully!");
+
+                System.out.println("Contact updated successfully!");
                 return;
             }
         }
-        System.out.println("The Contact is not found.");
+        System.out.println("Contact not found.");
     }
+
     public void deleteContact(String firstName, String lastName) {
         Iterator<Contact> iterator = contacts.iterator();
         while (iterator.hasNext()) {
             Contact contact = iterator.next();
-            if (contact.getFirstName().equalsIgnoreCase(firstName)&& contact.getLastName().equalsIgnoreCase(lastName)) {
+            if (contact.getFirstName().equalsIgnoreCase(firstName)
+                    && contact.getLastName().equalsIgnoreCase(lastName)) {
                 iterator.remove();
-                cityDictionary.get(contact.getCity().toLowerCase()).remove(contact);
-                stateDictionary.get(contact.getState().toLowerCase()).remove(contact);
-
-                System.out.println("The Contact is deleted successfully!");
+                System.out.println("Contact deleted successfully!");
                 return;
             }
         }
-        System.out.println("The Contact is not found.");
+        System.out.println("Contact not found.");
     }
-    public List<Contact> searchByCity(String city) {
-        return cityDictionary.getOrDefault(city.toLowerCase(), new ArrayList<>());
-    }
-    public List<Contact> searchByState(String state) {
-        return stateDictionary.getOrDefault(state.toLowerCase(), new ArrayList<>());
-    }
-    public void countByCity(String city) {
-        System.out.println("Number of contacts in " + city + ": " + searchByCity(city).size());
-    }
-    public void countByState(String state) {
-        System.out.println("Number of contacts in " + state + ": " + searchByState(state).size());
-    }
-    public void sortContactsByName() {
-        if (contacts.isEmpty()) {
-            System.out.println("No contacts to sort.");
-            return;
-        }
-        contacts.sort(Comparator.comparing(c -> (c.getFirstName() + " " + c.getLastName()).toLowerCase()));
-        System.out.println("Contacts sorted alphabetically by name:");
+
+    public void sortByName() {
+        contacts.sort(Comparator.comparing(Contact::getFirstName)
+                .thenComparing(Contact::getLastName));
+        System.out.println("Contacts sorted by Name.");
         displayContacts();
+    }
+
+    public void sortByCity() {
+        contacts.sort(Comparator.comparing(Contact::getCity));
+        System.out.println("Contacts sorted by City.");
+        displayContacts();
+    }
+
+    public void sortByState() {
+        contacts.sort(Comparator.comparing(Contact::getState));
+        System.out.println("Contacts sorted by State.");
+        displayContacts();
+    }
+
+    public void sortByZip() {
+        contacts.sort(Comparator.comparing(Contact::getZip));
+        System.out.println("Contacts sorted by ZIP.");
+        displayContacts();
+    }
+
+    public List<Contact> getContactsByCityOrState(String location) {
+        return contacts.stream()
+                .filter(c -> c.getCity().equalsIgnoreCase(location) || c.getState().equalsIgnoreCase(location))
+                .collect(Collectors.toList());
+    }
+
+    public List<Contact> getAllContacts() {
+        return contacts;
     }
 }
