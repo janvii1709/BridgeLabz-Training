@@ -1,219 +1,119 @@
 import java.util.*;
-
 public class AddressBookMain {
-
     private static Map<String, AddressBook> addressBookMap = new HashMap<>();
-
     public static void main(String[] args) {
-
-        System.out.println("Welcome to Address Book Program");
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("Welcome to Address Book Program");
         while (true) {
-            System.out.println("\nChoose an option:");
-            System.out.println("1. Add The New Address Book");
-            System.out.println("2. Select The Address Book");
-            System.out.println("3. Search Person by City");
-            System.out.println("4. Search Person by State");
-            System.out.println("5. Exit");
+            System.out.println("\n1. Add Address Book");
+            System.out.println("2. Select Address Book");
+            System.out.println("3. Search Person by City/State (All Address Books)");
+            System.out.println("4. Exit");
             System.out.print("Enter choice: ");
-
-            if (!sc.hasNextInt()) {
-                System.out.println("Invalid input! Please enter a number.");
-                sc.nextLine();
-                continue;
-            }
-
             int choice = sc.nextInt();
             sc.nextLine();
-
             switch (choice) {
-                case 1:
-                    addAddressBook(sc);
-                    break;
-                case 2:
-                    selectAddressBook(sc);
-                    break;
-                case 3:
-                    searchByCity(sc);
-                    break;
-                case 4:
-                    searchByState(sc);
-                    break;
-                case 5:
-                    System.out.println("Exiting Program. Thank You! Have A Nice Day!");
-                    sc.close();
+                case 1 -> addAddressBook(sc);
+                case 2 -> selectAddressBook(sc);
+                case 3 -> searchAcrossAddressBooks(sc);
+                case 4 -> {
+                    System.out.println("Thank You!");
                     return;
-                default:
-                    System.out.println("Invalid choice!");
+                }
+                default -> System.out.println("Invalid choice!");
             }
         }
     }
-
     private static void addAddressBook(Scanner sc) {
-        System.out.print("Enter The Address Book Name: ");
+        System.out.print("Enter Address Book Name: ");
         String name = sc.nextLine();
-
         if (addressBookMap.containsKey(name)) {
-            System.out.println("The Address Book already exists!");
+            System.out.println("Address Book already exists!");
         } else {
             addressBookMap.put(name, new AddressBook());
-            System.out.println("The Address Book '" + name + "' created successfully!");
+            System.out.println("Address Book created!");
         }
     }
-
     private static void selectAddressBook(Scanner sc) {
-        System.out.print("Enter The Address Book Name: ");
+        System.out.print("Enter Address Book Name: ");
         String name = sc.nextLine();
-
-        AddressBook addressBook = addressBookMap.get(name);
-        if (addressBook == null) {
-            System.out.println("The Address Book not found!");
+        AddressBook book = addressBookMap.get(name);
+        if (book == null) {
+            System.out.println("Not found!");
             return;
         }
-
-        manageAddressBook(sc, addressBook);
-    }
-
-    private static void manageAddressBook(Scanner sc, AddressBook addressBook) {
-
-        boolean running = true;
-
-        while (running) {
-            System.out.println("\nChoose an option:");
-            System.out.println("1. Add The Contact");
-            System.out.println("2. Display The Contacts");
-            System.out.println("3. Edit The Contact");
-            System.out.println("4. Delete The Contact");
+        boolean run = true;
+        while (run) {
+            System.out.println("\n1. Add Contact");
+            System.out.println("2. Display Contacts");
+            System.out.println("3. Edit Contact");
+            System.out.println("4. Delete Contact");
             System.out.println("5. Back");
             System.out.print("Enter choice: ");
-
-            if (!sc.hasNextInt()) {
-                System.out.println("Invalid input!");
-                sc.nextLine();
-                continue;
-            }
-
-            int choice = sc.nextInt();
+            int ch = sc.nextInt();
             sc.nextLine();
-
-            switch (choice) {
-                case 1:
-                    boolean adding = true;
-                    while (adding) {
-                        Contact contact = createContact(sc);
-                        addressBook.addContact(contact);
-
-                        while (true) {
-                            System.out.print("Do you want to add another contact? (yes/no): ");
-                            String more = sc.nextLine().trim();
-
-                            if (more.equalsIgnoreCase("yes")) {
-                                break;
-                            } else if (more.equalsIgnoreCase("no")) {
-                                adding = false;
-                                break;
-                            } else {
-                                System.out.println("Invalid input! Please type yes or no.");
-                            }
-                        }
-                    }
-                    break;
-
-                case 2:
-                    addressBook.displayContacts();
-                    break;
-
-                case 3:
-                    System.out.print("Enter The First Name: ");
+            switch (ch) {
+                case 1 -> book.addContact(createContact(sc));
+                case 2 -> book.displayContacts();
+                case 3 -> {
+                    System.out.print("First Name: ");
                     String fn = sc.nextLine();
-                    System.out.print("Enter The Last Name: ");
+                    System.out.print("Last Name: ");
                     String ln = sc.nextLine();
-                    addressBook.editContact(fn, ln, sc);
-                    break;
-
-                case 4:
-                    System.out.print("Enter The First Name: ");
-                    String f = sc.nextLine();
-                    System.out.print("Enter The Last Name: ");
-                    String l = sc.nextLine();
-                    addressBook.deleteContact(f, l);
-                    break;
-
-                case 5:
-                    running = false;
-                    break;
-
-                default:
-                    System.out.println("Invalid choice!");
+                    book.editContact(fn, ln, sc);
+                }
+                case 4 -> {
+                    System.out.print("First Name: ");
+                    String fn = sc.nextLine();
+                    System.out.print("Last Name: ");
+                    String ln = sc.nextLine();
+                    book.deleteContact(fn, ln);
+                }
+                case 5 -> run = false;
+                default -> System.out.println("Invalid!");
             }
         }
     }
 
     private static Contact createContact(Scanner sc) {
-
         System.out.print("First Name: ");
-        String firstName = sc.nextLine();
-
+        String fn = sc.nextLine();
         System.out.print("Last Name: ");
-        String lastName = sc.nextLine();
-
+        String ln = sc.nextLine();
         System.out.print("Address: ");
-        String address = sc.nextLine();
-
+        String ad = sc.nextLine();
         System.out.print("City: ");
         String city = sc.nextLine();
-
         System.out.print("State: ");
         String state = sc.nextLine();
-
-        System.out.print("ZIP: ");
+        System.out.print("Zip: ");
         String zip = sc.nextLine();
-
         System.out.print("Phone: ");
         String phone = sc.nextLine();
-
         System.out.print("Email: ");
         String email = sc.nextLine();
 
-        return new Contact(firstName, lastName, address, city, state, zip, phone, email);
+        return new Contact(fn, ln, ad, city, state, zip, phone, email);
     }
 
-    private static void searchByCity(Scanner sc) {
-        System.out.print("Enter City Name: ");
-        String city = sc.nextLine();
+    // SEARCHING IT ACROSS MULTIPLE ADDRESS BOOKS
+    private static void searchAcrossAddressBooks(Scanner sc) {
+        System.out.println("Search by: 1. City  2. State");
+        int ch = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter name: ");
+        String name = sc.nextLine();
         boolean found = false;
-
-        for (AddressBook book : addressBookMap.values()) {
-            for (Contact contact : book.getContacts()) {
-                if (contact.getCity().equalsIgnoreCase(city)) {
-                    System.out.println(contact);
-                    found = true;
-                }
+        for (Map.Entry<String, AddressBook> entry : addressBookMap.entrySet()) {
+            List<Contact> results = (ch == 1)? entry.getValue().getPersonsByCity(name): entry.getValue().getPersonsByState(name);
+            if (!results.isEmpty()) {
+                found = true;
+                System.out.println("\nAddress Book: " + entry.getKey());
+                results.forEach(System.out::println);
             }
         }
-
         if (!found) {
-            System.out.println("No person found in this city.");
-        }
-    }
-
-    private static void searchByState(Scanner sc) {
-        System.out.print("Enter State Name: ");
-        String state = sc.nextLine();
-        boolean found = false;
-
-        for (AddressBook book : addressBookMap.values()) {
-            for (Contact contact : book.getContacts()) {
-                if (contact.getState().equalsIgnoreCase(state)) {
-                    System.out.println(contact);
-                    found = true;
-                }
-            }
-        }
-
-        if (!found) {
-            System.out.println("No person found in this state.");
+            System.out.println("No persons found!");
         }
     }
 }

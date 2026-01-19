@@ -1,75 +1,69 @@
 import java.util.*;
-
 public class AddressBook {
-
     private List<Contact> contacts = new ArrayList<>();
-
+    private Map<String, List<Contact>> cityMap = new HashMap<>();
+    private Map<String, List<Contact>> stateMap = new HashMap<>();
     public void addContact(Contact contact) {
         if (contacts.contains(contact)) {
-            System.out.println("Duplicate Contact found! Contact already exists.");
+            System.out.println("Duplicate Contact! Already exists.");
             return;
         }
         contacts.add(contact);
-        System.out.println("The Contact added successfully!");
+        cityMap.computeIfAbsent(contact.getCity(), k -> new ArrayList<>()).add(contact);
+        stateMap.computeIfAbsent(contact.getState(), k -> new ArrayList<>()).add(contact);
+        System.out.println("Contact added successfully!");
     }
-
     public void displayContacts() {
         if (contacts.isEmpty()) {
-            System.out.println("No contact is found.");
+            System.out.println("No contacts available.");
             return;
         }
-        for (Contact contact : contacts) {
-            System.out.println(contact);
-            System.out.println("----------------------------");
-        }
+        contacts.forEach(System.out::println);
     }
-
-    public void editContact(String firstName, String lastName, Scanner sc) {
-        for (Contact contact : contacts) {
-            if (contact.getFirstName().equalsIgnoreCase(firstName)
-                    && contact.getLastName().equalsIgnoreCase(lastName)) {
-
-                System.out.println("Enter the new Address:");
-                contact.setAddress(sc.nextLine());
-
-                System.out.println("Enter the new City:");
-                contact.setCity(sc.nextLine());
-
-                System.out.println("Enter the new State:");
-                contact.setState(sc.nextLine());
-
-                System.out.println("Enter the new ZIP:");
-                contact.setZip(sc.nextLine());
-
-                System.out.println("Enter the new Phone:");
-                contact.setPhoneNumber(sc.nextLine());
-
-                System.out.println("Enter the new Email:");
-                contact.setEmail(sc.nextLine());
-
-                System.out.println("The Contact is updated successfully!");
+    public void editContact(String fn, String ln, Scanner sc) {
+        for (Contact c : contacts) {
+            if (c.getFirstName().equalsIgnoreCase(fn) &&
+                c.getLastName().equalsIgnoreCase(ln)) {
+                System.out.print("New Address: ");
+                c.setAddress(sc.nextLine());
+                System.out.print("New City: ");
+                c.setCity(sc.nextLine());
+                System.out.print("New State: ");
+                c.setState(sc.nextLine());
+                System.out.print("New Zip: ");
+                c.setZip(sc.nextLine());
+                System.out.print("New Phone: ");
+                c.setPhoneNumber(sc.nextLine());
+                System.out.print("New Email: ");
+                c.setEmail(sc.nextLine());
+                System.out.println("Contact updated!");
                 return;
             }
         }
-        System.out.println("The Contact is not found.");
+        System.out.println("Contact not found!");
     }
-
-    public void deleteContact(String firstName, String lastName) {
-        Iterator<Contact> iterator = contacts.iterator();
-        while (iterator.hasNext()) {
-            Contact contact = iterator.next();
-            if (contact.getFirstName().equalsIgnoreCase(firstName)
-                    && contact.getLastName().equalsIgnoreCase(lastName)) {
-                iterator.remove();
-                System.out.println("The Contact is deleted successfully!");
+    public void deleteContact(String fn, String ln) {
+        Iterator<Contact> it = contacts.iterator();
+        while (it.hasNext()) {
+            Contact c = it.next();
+            if (c.getFirstName().equalsIgnoreCase(fn) &&
+                c.getLastName().equalsIgnoreCase(ln)) {
+                it.remove();
+                cityMap.get(c.getCity()).remove(c);
+                stateMap.get(c.getState()).remove(c);
+                System.out.println("Contact deleted!");
                 return;
             }
         }
-        System.out.println("The Contact is not found.");
+        System.out.println("Contact not found!");
     }
-
-    // REQUIRED FOR SEARCHING THE CITY / STATE ACROSS ADDRESS BOOKS
     public List<Contact> getContacts() {
         return contacts;
+    }
+    public List<Contact> getPersonsByCity(String city) {
+        return cityMap.getOrDefault(city, new ArrayList<>());
+    }
+    public List<Contact> getPersonsByState(String state) {
+        return stateMap.getOrDefault(state, new ArrayList<>());
     }
 }
