@@ -1,5 +1,4 @@
-import java.util.Objects;
-
+import java.util.*;
 public class Contact {
     private String firstName;
     private String lastName;
@@ -10,7 +9,7 @@ public class Contact {
     private String phoneNumber;
     private String email;
 
-    public Contact(String firstName, String lastName, String address,String city, String state, String zip,String phoneNumber, String email) {
+    public Contact(String firstName, String lastName, String address, String city, String state, String zip, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -22,23 +21,28 @@ public class Contact {
     }
 
     public String getFirstName() { return firstName; }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
     public String getLastName() { return lastName; }
-    public String getCity() { return city; }
-    public String getState() { return state; }
-
+    public void setLastName(String lastName) { this.lastName = lastName; }
+    public String getAddress() { return address; }
     public void setAddress(String address) { this.address = address; }
+    public String getCity() { return city; }
     public void setCity(String city) { this.city = city; }
+    public String getState() { return state; }
     public void setState(String state) { this.state = state; }
+    public String getZip() { return zip; }
     public void setZip(String zip) { this.zip = zip; }
+    public String getPhoneNumber() { return phoneNumber; }
     public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+    public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Contact)) return false;
-        Contact contact = (Contact) o;
-        return firstName.equalsIgnoreCase(contact.firstName) &&lastName.equalsIgnoreCase(contact.lastName);
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Contact other = (Contact) obj;
+        return firstName.equalsIgnoreCase(other.firstName) && lastName.equalsIgnoreCase(other.lastName);
     }
 
     @Override
@@ -48,6 +52,6 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Name: " + firstName + " " + lastName +"\nCity: " + city +"\nState: " + state +"\nPhone: " + phoneNumber +"\nEmail: " + email + "\n";
+        return "First Name: " + firstName + "\n" +"Last Name: " + lastName + "\n" +"Address: " + address + "\n" +"City: " + city + "\n" +"State: " + state + "\n" +"ZIP: " + zip + "\n" +"Phone Number: " + phoneNumber + "\n" +"Email: " + email + "\n";
     }
 }
