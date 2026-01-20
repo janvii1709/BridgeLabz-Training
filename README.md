@@ -378,18 +378,68 @@ Solved the following LeetCode problems:
    2. **Permutation Sequence**
 
 
+### 📅 20 Jan 2026 (Tuesday)
+
+## 📖 Overview
+This repository contains **scenario-based Java projects** demonstrating **OOP concepts and data structures**.  
+These projects focus on real-world scenarios and problem-solving skills.
+
+---
+
+## 💼 Scenario-Based Problems  & Exercises
+
+- 🏦 **Banking Account Hierarchy**  
+  Savings, Checking, and Business accounts with deposit, withdrawal, and account details.
+
+- 👨‍💼 **Employee Role Polymorphism**  
+  Different employee roles with role-specific behavior using **polymorphism**.
+
+- 📦 **ParcelTracker – Delivery Chain Management**  
+  Singly Linked List implementation to track parcels dynamically.
+
+- 📝 **ExamProctor – Online Exam Review System**  
+  Stack + HashMap based system for exam submissions and grading.
+
+- 🌐 **BrowserBuddy – Tab History Manager**  
+  Doubly Linked List + Stack for forward/backward navigation and closed tab restoration.
+
+- 🚦 **TrafficManager – Roundabout Vehicle Flow**  
+  Circular Linked List + Queue to manage vehicles entering and exiting a smart roundabout.
+
+- 📚 **BookShelf – Library Organizer**  
+  HashMap → LinkedList for genre-wise catalog management. Supports borrow/return dynamically.
+
+- 🎬 **CinemaTime – Movie Schedule Manager**  
+  Store, update, view, and search movie showtimes and titles for a cinema.  
+  Users can **add new movies**, **view all showtimes**, and **search for specific movies**.
+
+---
+
+## 🛠 Concepts Studied
+- **Generics**: Generic classes, bounded type parameters, wildcards.  
+- **OOP Concepts**: Inheritance, Polymorphism, Abstraction, Encapsulation.  
+- **Data Structures**: Linked List, Doubly Linked List, Circular Linked List, Stack, Queue, HashMap.
+
+---
+
+## ✅ LeetCode Problems Solved
+1. **Power of Two** – Check if a number is a power of two.  
+2. **Ugly Number** – Check if a number’s prime factors are limited to 2, 3, 5.
+
+
 ---
 
 ## 🌟 Key Skills & Highlights
 
-- Core Java Fundamentals
-- Object-Oriented Programming (OOP)
-- Exception Handling
-- Java Collections Framework
-- Data Structures (Linked Lists)
-- Scenario-Based Problem Solving
-- Git & GitHub Version Control
-- Clean Code & Best Practices
+- Core Java Fundamentals. 
+- Object-Oriented Programming (OOP) – Inheritance, Polymorphism, Abstraction, Encapsulation.  
+- Exception Handling.  
+- Java Collections Framework – List, HashMap, Set.  
+- Data Structures – Singly Linked List, Doubly Linked List, Circular Linked List, Stack, Queue.  
+- Scenario-Based Problem Solving on daily basis.
+- Git & GitHub Version Control.  
+- Clean Code & Best Practices. 
+- Algorithm Practice from Leetcode.
 
 ---
 
