@@ -427,6 +427,61 @@ These projects focus on real-world scenarios and problem-solving skills.
 2. **Ugly Number** – Check if a number’s prime factors are limited to 2, 3, 5.
 
 
+### 📅 21 Jan 2026 (Wednesday)
+
+
+---
+
+## 🚀 Overview
+Today was focused on strengthening **Core Java fundamentals**, **problem-solving**, and **interview-oriented coding**.  
+I started working on **Java Generics**, **Exception Handling**, **Collections**, and solved multiple **LeetCode problems**.  
+I also completed **scenario-based review assignments** and pushed the solutions to the repository.
+
+---
+
+## ✅ Work Completed
+
+### 🔹 Java Generics
+- Started solving **Java Generics problems**
+- Practiced:
+  - Type safety
+  - Bounded type parameters
+  - Reusable and flexible code design
+- Improved understanding of **generic classes and methods**
+
+---
+
+### 🔹 Exception Handling
+- Studied **Exception Handling in Java**
+- Covered concepts:
+  - `try` / `catch`
+  - `throw` and `throws`
+  - Custom exceptions
+- Understood real-world use cases of error handling
+
+---
+
+### 🔹 Java Collections Framework
+- Studied **Collections Framework**
+- Learned and practiced:
+  - `List`
+  - `Queue`
+  - `Map`
+- Started solving **collection-based problems**
+- Focused on real-world scenarios using collections
+
+---
+
+### 🔹 Review Session Tasks
+Had a **review session** today and was assigned the following:
+
+1. **Scenario-Based Notification Framework**
+2. **Longest Palindrome String Problem**
+
+✔️ Implemented both solutions  
+✔️ Followed clean coding practices  
+✔️ Pushed the code to the **reviews branch** inside the **reviews folder**
+
 ---
 
 ## 🌟 Key Skills & Highlights
@@ -434,7 +489,7 @@ These projects focus on real-world scenarios and problem-solving skills.
 - Core Java Fundamentals. 
 - Object-Oriented Programming (OOP) – Inheritance, Polymorphism, Abstraction, Encapsulation.  
 - Exception Handling.  
-- Java Collections Framework – List, HashMap, Set.  
+- Java Collections Framework – List, HashMap, Set , Generics.  
 - Data Structures – Singly Linked List, Doubly Linked List, Circular Linked List, Stack, Queue.  
 - Scenario-Based Problem Solving on daily basis.
 - Git & GitHub Version Control.  
