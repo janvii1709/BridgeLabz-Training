@@ -482,6 +482,17 @@ Had a **review session** today and was assigned the following:
 ✔️ Followed clean coding practices  
 ✔️ Pushed the code to the **reviews branch** inside the **reviews folder**
 
+### 🔹 LeetCode Practice
+Solved the following **LeetCode problems**:
+
+1. ✅ **Power of Three**
+2. ✅ **Power of Four**
+
+- Used **math-based logic**
+- Avoided unnecessary built-in methods
+- Focused on optimized and readable solutions
+
+
 ---
 
 ## 🌟 Key Skills & Highlights
