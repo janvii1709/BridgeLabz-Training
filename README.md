@@ -429,7 +429,6 @@ These projects focus on real-world scenarios and problem-solving skills.
 
 ### 📅 21 Jan 2026 (Wednesday)
 
-
 ---
 
 ## 🚀 Overview
@@ -438,8 +437,6 @@ I started working on **Java Generics**, **Exception Handling**, **Collections**,
 I also completed **scenario-based review assignments** and pushed the solutions to the repository.
 
 ---
-
-## ✅ Work Completed
 
 ### 🔹 Java Generics
 - Started solving **Java Generics problems**
@@ -493,6 +490,81 @@ Solved the following **LeetCode problems**:
 - Used **math-based logic**
 - Avoided unnecessary built-in methods
 - Focused on optimized and readable solutions
+
+---
+
+### 📅 22 Jan 2026 (Thursday)
+
+### 📚 Java Collections
+✔ Solved multiple **Collection Framework** questions  
+✔ Practiced usage of **List, Set, Map, Queue**  
+✔ Improved understanding of real-world use cases  
+
+---
+
+### 🌊 Java Streams
+✔ Solved questions based on **Java I/O Streams**  
+✔ Practiced **File Streams, Object Streams, Buffered Streams**  
+✔ Understood reading and writing data efficiently  
+
+---
+
+### 🧠 Scenario-Based Problems
+✔ **SmartCheckout – Supermarket Billing System**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Implemented using **Queue + HashMap**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Handled customer flow, billing, and stock updates  
+
+✔ **ParcelTracker – Delivery Chain Management**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Implemented using **Singly Linked List**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Tracked delivery stages and handled missing parcels  
+
+---
+
+### ⚠️ Exception Handling
+✔ Studied **Exceptions in Java**  
+✔ Learned types of exceptions:  
+&nbsp;&nbsp;&nbsp;&nbsp;• Checked Exceptions  
+&nbsp;&nbsp;&nbsp;&nbsp;• Unchecked Exceptions  
+&nbsp;&nbsp;&nbsp;&nbsp;• Errors  
+
+---
+
+### 💻 LeetCode Practice
+✔ Solved **2 LeetCode Problems**:
+1️⃣ **Day of the Week**  
+2️⃣ **Day of the Year**
+
+---
+
+### 🎯 Summary
+⭐ Strengthened understanding of **Java Core Concepts**  
+⭐ Practiced **DSA with real-world scenarios**  
+⭐ Improved problem-solving skills through **LeetCode**
+
+---
+
+
+### 📅 23 Jan 2026 (Friday)
+
+### 🌊 Java Streams
+✔ Studied **Java Streams** in more depth  
+✔ Solved multiple stream-related questions  
+✔ Pushed solved code to **GitHub**  
+
+---
+
+### 💻 LeetCode Practice
+✔ Solved **2 LeetCode Problems**:
+1️⃣ **Divisor Game**  
+2️⃣ **Largest Triangle Area**
+
+---
+
+### 🚀 Learning Highlights
+⭐ Better understanding of **Java Stream concepts**  
+⭐ Improved problem-solving skills  
+⭐ Maintained consistency by pushing work to **GitHub**
+
 
 
 ---
