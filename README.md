@@ -20,7 +20,6 @@ It reflects continuous learning in **Core Java, OOP, Data Structures, Git, and P
 ## 📂 Repository Structure
 ```
 
-
 BridgeLabz-Training/
 │
 ├── core-java-practice/ (Branch & Folder)
@@ -35,20 +34,32 @@ BridgeLabz-Training/
 │ │ ├── inheritance/
 │ │ ├── encapsulation/
 │ │ └── polymorphism/
-│ ├── scenario-based/
-│ └── leet-code-codebase/
+│ ├── leet-code-codebase/
+│ └── scenario-based/
 │
 ├── dsa-practice/ (Branch & Folder)
-│ └── gcr-codebase/
+│ ├── gcr-codebase/
+│ │ ├── linked-list/
+│ │ ├── stack/
+│ │ └── queue/
+│ ├── leet-code-codebase/
+│ └── scenario-based/
+│
+├── collections-practice/ (Branch & Folder)
+│ ├── gcr-codebase/
+│ │ ├── collections/
+│ │ └── java-streams/
+│ │ └── Exceptions/
+│ ├── leet-code-codebase/
+│ └── scenario-based/
 │
 ├── reviews/ (Branch)
 │
 └── README.md
 
 
+
 ```
-
-
 
 # 📅 WEEK 1 – Core Java & Git Fundamentals
 
