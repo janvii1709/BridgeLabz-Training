@@ -367,7 +367,7 @@ Solved the following LeetCode problems:
 
 ---
 
-# 📅 WEEK 6 – DSA AND ADVANCED DSA
+# 📅 WEEK 6 – DSA AND COLLECTIONS 
 
 ### 📅 19 Jan 2026 (Monday)
 
@@ -569,18 +569,121 @@ Solved the following **LeetCode problems**:
 
 ---
 
-## 🌟 Key Skills & Highlights
+# 📅 WEEK 7 – JAVA COLLECTIONS, STREAMS AND EXCEPTIONS
 
-- Core Java Fundamentals. 
-- Object-Oriented Programming (OOP) – Inheritance, Polymorphism, Abstraction, Encapsulation.  
-- Exception Handling.  
-- Java Collections Framework – List, HashMap, Set , Generics.  
-- Data Structures – Singly Linked List, Doubly Linked List, Circular Linked List, Stack, Queue.  
-- Scenario-Based Problem Solving on daily basis.
-- Git & GitHub Version Control.  
-- Clean Code & Best Practices. 
-- Algorithm Practice from Leetcode.
+### 📅 23 Jan 2026 (Friday)
 
 ---
+
+### 🌊 Java Streams
+✔ Solved multiple **Java Stream** problems  
+✔ Practiced stream operations thoroughly  
+✔ Pushed all solved questions to **GitHub**
+
+---
+
+### ⚠️ Exception Handling
+✔ Started solving problems based on **Java Exceptions**  
+✔ Practiced understanding of exception flow and handling  
+
+---
+
+### 💻 LeetCode Practice
+✔ Solved **2 LeetCode Problems**:
+1️⃣ **Boomerang Check**  
+2️⃣ **Rectangle Overlap**
+
+---
+
+### 🎯 Progress Summary
+⭐ Strengthened hands-on practice with **Java Streams**  
+⭐ Continued learning **Exception Handling** concepts  
+⭐ Improved problem-solving skills through **LeetCode**  
+⭐ Maintained consistent code uploads on **GitHub**
+
+
+---
+
+## 🚀 Skills & Learning Progress
+
+---
+
+### ☕ Core Java
+✅ **Core Java Fundamentals** – Completed with extensive practice  
+✅ **Advanced Core Java Concepts** – Hands-on implementation  
+
+---
+
+### 🧠 Object-Oriented Programming (OOP)
+✅ **OOP Basics & Advanced Concepts**
+- Inheritance  
+- Polymorphism  
+- Abstraction  
+- Encapsulation  
+
+---
+
+### ⚠️ Exception Handling
+🔄 Concepts covered  
+🔄 Currently solving **exception-based problems**  
+
+---
+
+### 📚 Java Collections Framework *(In Progress)*
+🔄 Working on:
+- List  
+- HashMap  
+- Set  
+- Generics  
+
+---
+
+### 🧩 Data Structures & Advanced DSA
+✅ Completed implementation and practice of:
+- Singly Linked List  
+- Doubly Linked List  
+- Circular Linked List  
+- Stack  
+- Queue  
+
+---
+
+### 🧪 Scenario-Based Problem Solving
+✅ Solved real-world scenarios on a **daily basis**:
+- 🛒 **SmartCheckout** – Supermarket Billing System  
+- 📦 **ParcelTracker** – Delivery Chain Management  
+
+---
+
+### 🌱 Version Control
+✅ **Git & GitHub**
+- Regular commits  
+- Code version tracking  
+- Repository management  
+
+---
+
+### ✨ Clean Code & Best Practices
+✅ Followed throughout development:
+- Meaningful variable and method names  
+- Modular code structure  
+- Readable and maintainable code  
+
+---
+
+### 🧠 Algorithm Practice
+✅ **LeetCode Problem Solving**
+- Consistent daily practice  
+- Focus on logic building and optimization  
+
+---
+
+### 🎯 Current Focus
+🔥 Deepening understanding of **Java Collections**  
+🔥 Applying concepts through **problem-solving and projects**  
+
+
+---
+
 
 📌 **This repository represents structured learning, daily consistency, and hands-on practice during the BridgeLabz Training Program.**
