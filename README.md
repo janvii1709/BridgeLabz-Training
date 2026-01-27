@@ -613,6 +613,43 @@ Solved the following **LeetCode problems**:
 ⭐ Maintained consistent code uploads on **GitHub**
 
 
+### 📅 27 Jan 2026 (Tuesday)
+
+---
+
+## 🚀 **Today's Achievements**
+
+### 🛠️ Exception Handling
+- ✅ Solved multiple **exception questions** in Java.
+- ⚡ Implemented **custom exceptions** and proper handling.
+- 📤 Pushed all solutions to **GitHub**.
+
+### 🧩 Scenario-Based Problem
+- **Lexical Twist**
+  - 🔄 Solved the **word manipulation puzzle**.
+  - Applied **string reversal, lowercase conversion, and vowel replacement** logic.
+  - 📝 Improved **problem-solving and string handling skills**.
+
+### 🏆 LeetCode Challenges Solved
+1. **Goat Latin** 🐐
+   - Converted sentences into Goat Latin following the problem rules.
+2. **Large Groups** ➡️
+   - Identified consecutive character groups efficiently.
+
+---
+
+## 📂 GitHub Repository
+- All solutions are **updated on GitHub**.  
+
+---
+
+## 💡 **Key Learnings**
+- Practiced **exception handling, string manipulation, and array/string problems**.
+- Enhanced **scenario-based thinking** with real-life puzzles.
+- Increased **problem-solving speed and confidence** on LeetCode challenges.
+
+
+
 ---
 
 ## 🚀 Skills & Learning Progress
