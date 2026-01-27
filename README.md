@@ -582,7 +582,7 @@ Solved the following **LeetCode problems**:
 
 # 📅 WEEK 7 – JAVA COLLECTIONS, STREAMS AND EXCEPTIONS
 
-### 📅 23 Jan 2026 (Friday)
+### 📅 26 Jan 2026 (Monday)
 
 ---
 
