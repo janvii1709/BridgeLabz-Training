@@ -649,6 +649,63 @@ Solved the following **LeetCode problems**:
 - Increased **problem-solving speed and confidence** on LeetCode challenges.
 
 
+### 📅 28 Jan 2026 (Wednesday)
+
+---
+
+## 🚀 **Today's Progress & Achievements**
+
+### 🧩 Scenario-Based Problems Solved
+Solved **3 real-world scenario-based problems**, focusing on logic building and implementation:
+
+1. 🔑 **Flip Key**
+   - Designed logic to flip keys based on given conditions.
+   - Improved understanding of conditional flows.
+
+2. 🍽️ **Restaurant Table Reservation**
+   - Implemented reservation validation logic.
+   - Handled edge cases like table availability and booking limits.
+
+3. 💾 **File Backup Scheduler**
+   - Created scheduling logic for automated backups.
+   - Strengthened knowledge of time-based and system-like workflows.
+
+---
+
+### 📘 Concepts Learned
+- 🧵 **Regular Expressions (Regex)**
+  - Learned pattern matching, validation, and searching.
+  - Practiced common regex use-cases.
+
+- 🧪 **JUnit**
+  - Understood unit testing fundamentals.
+  - Learned how to write and execute test cases for Java programs.
+
+---
+
+### 🏆 LeetCode Problems Solved
+1. **Minimum Flips to Reverse Binary** 🔄
+   - Applied bit manipulation and logical transitions.
+2. **Hex And Hexatrigesimal** 🔢
+   - Worked with number system conversions.
+   - Strengthened base conversion logic (Base-16 & Base-36).
+
+---
+
+## 📂 GitHub Status
+- ✅ All solutions completed and organized.
+- 📤 Code pushed to **GitHub repository**.
+
+---
+
+## 💡 **Key Learnings**
+- Enhanced **scenario-based problem-solving skills**.
+- Gained confidence in **regex patterns and unit testing**.
+- Improved logical thinking for **binary operations and number systems**.
+
+---
+
+
 
 ---
 
