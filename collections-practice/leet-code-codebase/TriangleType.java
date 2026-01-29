@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class TriangleType {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] nums = new int[3];
+        System.out.println("Enter 3 sides of the triangle:");
+        for (int i = 0; i < 3; i++) {
+            nums[i] = sc.nextInt();
+        }
+        System.out.println(triangleType(nums));
+    }
+    public static String triangleType(int[] nums) {
+        int a = nums[0];
+        int b = nums[1];
+        int c = nums[2];
+        if (a + b <= c || a + c <= b || b + c <= a) {
+            return "none";
+        }
+        if (a == b && b == c) {
+            return "equilateral";
+        } else if (a == b || b == c || a == c) {
+            return "isosceles";
+        } else {
+            return "scalene";
+        }
+    }
+}
