@@ -703,11 +703,56 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 - Gained confidence in **regex patterns and unit testing**.
 - Improved logical thinking for **binary operations and number systems**.
 
+### 📅 29 Jan 2026 (Thursday)
+
+### ✅ LeetCode Challenges
+- [x] **Binary Date Conversion** 🧮
+- [x] **Triangle Type Classification** 🔺
+
+### ✅ Regex & JUnit Practice
+- [x] Solved **Regex validation problems** 🔍
+- [x] Practiced **JUnit test cases** 🧪
+  - Covered exception handling
+  - Verified edge cases
+
+### 🛠 Skills Strengthened
+- Java problem-solving 💻
+- Conditional logic & edge cases ⚡
+- Regex pattern matching 🕵️‍♀️
+- Unit testing using **JUnit** 🧪
+- Writing clean, testable code ✨
+
+### 🎯 Summary
+> Focused on improving coding problem-solving through LeetCode challenges and enhanced testing knowledge by practicing Regex and JUnit problems. Strengthened understanding of validation, exception handling, and writing maintainable code.
+
+
+### 📅 30 Jan 2026 (Friday)
+
+### ✅ LeetCode Challenges
+- [x] **Arranging Coins** 🪙
+- [x] **Nim Coins Game** 🎲
+
+### ✅ Regex & JUnit Practice
+- [x] Solved **Regex problems** 🔍
+- [x] Practiced **JUnit test cases** 🧪
+- [x] **Pushed all work to GitHub** 💻🚀
+
+### ✅ Scenario-Based Problem
+- [x] Solved **Future Logistics billing system** scenario problem 🚚
+
+### 🛠 Skills Strengthened
+- Java problem-solving & logic 💻
+- Conditional logic & edge cases ⚡
+- Regex pattern matching 🕵️‍♀️
+- Unit testing using **JUnit** 🧪
+- Scenario-based coding & OOP implementation ✨
+
+### 🎯 Summary
+> Focused on improving coding problem-solving through LeetCode challenges and strengthened testing and scenario-based problem-solving knowledge. Practiced Regex, JUnit, and applied OOP concepts in a real-world scenario problem.
+
+
 ---
 
-
-
----
 
 ## 🚀 Skills & Learning Progress
 
