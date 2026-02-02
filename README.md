@@ -753,6 +753,30 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 
 ---
 
+# 📅 WEEK 8 – JAVA COLLECTIONS, STREAMS , IO PROGRAMMING And JAVA8 & ITS FEATURES
+
+### 📅 02 Feb 2026 (Monday)
+
+### ✅ Java & LeetCode Challenges
+- [x] Solved **Reflection**, **Annotations**, and **CSV Handling** problems 🔍  
+- [x] Solved **Lambda Expression** problem ⚡  
+- [x] **Pushed all solutions to GitHub & LeetCode** 💻🚀
+
+### ✅ LeetCode Problems
+- [x] **K Beauty Calculator** 🏆  
+- [x] **Reconstruct Sentence** 📝
+
+### 🛠 Skills Strengthened
+- Java advanced concepts: Reflection, Annotations, Lambda Expressions 💡  
+- String manipulation & algorithmic problem-solving 🧩  
+- Functional programming & OOP implementation ✨  
+- Version control & GitHub workflow 🚀
+
+### 🎯 Summary
+> Focused on mastering Java advanced concepts, including Reflection, Annotations, and Lambda Expressions. Practiced algorithmic problem-solving with LeetCode challenges and pushed all work to GitHub for version control and revision.
+
+
+---
 
 ## 🚀 Skills & Learning Progress
 
@@ -779,27 +803,45 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 
 ---
 
-### 📚 Java Collections Framework *(In Progress)*
-🔄 Working on:
+### 📚 Java Collections Framework
+✅ Completed and practiced:
 - List  
 - HashMap  
 - Set  
+- TreeMap / LinkedHashMap  
 - Generics  
+- Iterators & ListIterators  
+
+---
+
+### 💧 Java Streams & Functional Programming
+✅ Explored **Java 8 Streams & Lambda Expressions**  
+- Stream operations: filter, map, reduce, collect  
+- Method references & functional interfaces  
+- Parallel streams for optimization  
+
+---
+
+### 💾 IO Programming
+✅ Practiced **File Handling & I/O Streams**
+- Reading/writing text and CSV files  
+- BufferedReader, BufferedWriter  
+- FileReader/FileWriter, FileInputStream/FileOutputStream  
 
 ---
 
 ### 🧩 Data Structures & Advanced DSA
-✅ Completed implementation and practice of:
+✅ Implemented & practiced:
 - Singly Linked List  
 - Doubly Linked List  
 - Circular Linked List  
-- Stack  
-- Queue  
+- Stack & Queue  
+- Problem-solving using arrays & strings  
 
 ---
 
 ### 🧪 Scenario-Based Problem Solving
-✅ Solved real-world scenarios on a **daily basis**:
+✅ Solved real-world scenarios **daily**:
 - 🛒 **SmartCheckout** – Supermarket Billing System  
 - 📦 **ParcelTracker** – Delivery Chain Management  
 
@@ -825,15 +867,20 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 ✅ **LeetCode Problem Solving**
 - Consistent daily practice  
 - Focus on logic building and optimization  
+- Solved problems include:  
+  - Reflection, Annotations, CSV Handling  
+  - Lambda Expressions  
+  - K Beauty Calculator  
+  - Reconstruct Sentence  
 
 ---
 
 ### 🎯 Current Focus
-🔥 Deepening understanding of **Java Collections**  
-🔥 Applying concepts through **problem-solving and projects**  
-
+🔥 Deepening understanding of **Java Collections & Streams**  
+🔥 Mastering **IO Programming**  
+🔥 Applying **Java 8 features** through real-world problems  
+🔥 Strengthening **problem-solving & algorithmic skills**  
 
 ---
-
 
 📌 **This repository represents structured learning, daily consistency, and hands-on practice during the BridgeLabz Training Program.**
