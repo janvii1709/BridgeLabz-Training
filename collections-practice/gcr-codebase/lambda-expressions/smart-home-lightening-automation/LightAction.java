@@ -1,0 +1,3 @@
+interface LightAction {
+    void activate();
+}
