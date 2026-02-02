@@ -50,6 +50,11 @@ BridgeLabz-Training/
 │ │ ├── collections/
 │ │ └── java-streams/
 │ │ └── Exceptions/
+│ │ └── Java-Generics/
+│ │ └── csv-handling/
+│ │ └── json-data/
+│ │ └── functional-interfaces/
+│ │ └── lambda-expressions/
 │ ├── leet-code-codebase/
 │ └── scenario-based/
 │
@@ -60,32 +65,55 @@ BridgeLabz-Training/
 
 
 ```
+---
 
 # 📅 WEEK 1 – Core Java & Git Fundamentals
 
+---
+
 ### 🗓️ 16 Dec 2025 (Tuesday)
+
+---
+
 - Introduction to BridgeLabz training structure, rules, and guidelines
 - Installed required software: **JDK, Eclipse IDE, Git, GitHub**
 - Learned basic Git commands and repository creation
 - Understood daily practice workflow and submission process
 
+---
+
 ### 🗓️ 17 Dec 2025 (Wednesday)
+
+---
+
 - Solved **5 random problems** and pushed them to the LeetCode practice folder
 - Implemented Git commands learned on Day 1
 - Created `gcr-codebase` branch and merged local and remote repositories
 - Practiced basic Java problems and pushed them to `programming-elements`
 
+---
+
 ### 🗓️ 18 Dec 2025 (Thursday)
+
+---
 - Revised Java basics: variables, constants, and data types
 - Practiced Level 1 and Level 2 logical problems
 - Pushed solutions to `programming-elements` folder
 
+---
+
 ### 🗓️ 19 Dec 2025 (Friday)
+
+---
 - Revised Java fundamentals, conditional statements, and loops
 - Practiced Level 1, Level 2, and Level 3 problems using `if`, `for`, and `while`
 - Learned Java naming conventions and refactored code accordingly
 
+---
+
 ### 🗓️ 20 Dec 2025 (Saturday)
+
+---
 - Practiced Java Arrays (1D and 2D)
 - Learned array creation, access, and modification using loops
 - Solved multiple array-based problems
@@ -98,39 +126,63 @@ BridgeLabz-Training/
 
 # 📅 WEEK 2 – Strings, Methods & Clean Coding
 
+---
+
 ### 🗓️ 22 Dec 2025 (Monday)
+
+---
 - Learned Java String concepts and ways to create Strings
 - Practiced escape sequences (`\\n`, `\\t`, `\\\"`, `\\\\`)
 - Used Scanner for string input (`next()` and `nextLine()`)
 - Practiced common String methods like `length()`, `charAt()`, `equals()`, `substring()`
 
+---
+
 ### 🗓️ 23 Dec 2025 (Tuesday)
+
+---
 - Revised concepts using study material
 - Implemented scenario-based programs:
   - Election Booth Manager
   - Metro Smart Card Fare Deduction
 - Learned basics of **SDLC** and **Scrum methodology**
 
+---
+
 ### 🗓️ 24 Dec 2025 (Wednesday)
+
+---
 - Studied Java Methods (static, user-defined, recursive)
 - Practiced passing parameters and returning values
 - Used `Math` class for calculations
 - Followed best practices for clean and structured code
 
+---
+
 ### 🗓️ 26 Dec 2025 (Friday)
+
+---
 - Practiced advanced String handling and built-in methods
 - Implemented:
   - Bus Route Distance Tracker
   - Festival Lucky Draw Program
 - Applied clean coding and input validation techniques
 
+---
+
 ### 🗓️ 27 Dec 2025 (Saturday)
+
+---
 - Practiced Java built-in classes: `Random`, `Math`
 - Learned Java Date & Time API
 - Implemented `LocalDate`, `LocalTime`, and `LocalDateTime`
 - Followed modular programming approach
 
+---
+
 ### 🗓️ 28 Dec 2025 (Sunday)
+
+---
 - Solved additional built-in method problems
 - Updated README to reflect completed work
 
@@ -138,27 +190,45 @@ BridgeLabz-Training/
 
 # 📅 WEEK 3 – Object-Oriented Programming (OOP)
 
+---
+
 ### 🗓️ 29 Dec 2025 (Monday)
+
+---
 - Solved remaining built-in method problems
 - Completed scenario-based Java programs
 
+---
+
 ### 🗓️ 30 Dec 2025 (Tuesday)
+
+---
 - Studied Procedural Programming vs OOP
 - Learned Class and Object concepts
 - Implemented Snake and Ladder program
 - Practiced basic Linux terminal commands
 
+---
 ### 🗓️ 31 Dec 2025 (Wednesday)
+
+---
 - Learned Java Constructors (default & parameterized)
 - Understood static vs instance variables
 - Studied Access Modifiers
 - Completed Level 1 OOP lab practice
 
+---
+
 ### 🗓️ 01 Jan 2026 (Thursday)
+
+---
 - Learned `this`, `static`, `final`, and `instanceof`
 - Solved advanced scenario-based String programs
 
+---
 ### 🗓️ 02 Jan 2026 (Friday)
+
+---
 - Learned Object-Oriented Design concepts
 - Designed Class, Object, and Sequence Diagrams using Excalidraw
 - Implemented:
@@ -166,7 +236,11 @@ BridgeLabz-Training/
   - Student Score Management System
   - Library Management System
 
+---
+
 ### 🗓️ 03–04 Jan 2026
+
+---
 - Practiced Inheritance and Polymorphism
 - Solved LeetCode problems
 - Updated README file
@@ -175,30 +249,50 @@ BridgeLabz-Training/
 
 # 📅 WEEK 4 – Advanced OOP, Collections & DSA
 
+---
+
 ### 🗓️ 05 Jan 2026 (Monday)
+
+---
 - Implemented Invoice Generator using String parsing
 - Created Cafeteria Menu App using arrays and methods
 - Developed Student Score Analyzer
 - Applied Exception Handling concepts
 
+---
+
 ### 🗓️ 06 Jan 2026 (Tuesday)
+
+---
 - Implemented Phone Contact Organizer using ArrayList
 - Developed Online Quiz Result Processor
 - Created Library Management System with custom exceptions
 
+---
+
 ### 🗓️ 07 Jan 2026 (Wednesday)
+
+---
 - Studied Data Structure fundamentals
 - Developed Cab Booking System
 - Implemented Online Banking System
 - Applied OOP, Interfaces, Exception Handling, and Multithreading
 
+---
+
 ### 🗓️ 08 Jan 2026 (Thursday)
+
+---
 - Implemented Singly Linked List
 - Implemented Doubly Linked List
 - Implemented Circular Linked List
 - Practiced insertion, deletion, traversal, and searching
 
+---
+
 ### 🗓️ 09 Jan 2026 (Friday)
+
+---
 - Implemented **Hospital Patient Management System (CRUD)**:
   - Classes: Patient, Doctor, Bill
   - Encapsulation using getters and setters
@@ -225,7 +319,12 @@ BridgeLabz-Training/
 
 # 📅 WEEK 5 – Advanced OOP, Collections & DSA
 
+---
+
 ### 🗓️ 12 Jan 2026 (Monday)
+
+---
+
 - Implemented scenario-based systems using Core Java.
 - Applied OOP concepts: Abstraction, Inheritance, Encapsulation, Polymorphism, Interfaces
 - Solved OOP projects: Banking, E-Commerce, Hospital, Library, Cab Booking, Hotel, Voting, Digital Wallet
@@ -235,7 +334,11 @@ BridgeLabz-Training/
 
 - Pushed all completed work to respective GitHub branches.
 
+---
+
 ### 🗓️ 13 Jan 2026 (Tuesday)
+
+---
 
 ### ✅ Submission & Learning Summary
 
@@ -287,8 +390,11 @@ Focus was given on:
 ### 🎯 Outcome
 This day strengthened understanding of **core data structures**, **problem-solving using stacks and queues**, **hashing concepts**, and **real-world Git workflows**, along with foundational knowledge of **sorting algorithms**.
 
+---
 
 ### 📅 14 Jan 2026 (Wednesday)
+
+---
 
 ## ✅ Submission of Sorting Algorithms
 Implemented and tested the following sorting algorithms:
@@ -306,8 +412,11 @@ Solved the following LeetCode problems:
 
 ✔ Strengthened understanding of sorting techniques and hash map–based pattern matching problems.
 
+---
 
 ### 📅 15 Jan 2026 (Thursday)
+
+---
 
 ## ✅ Sorting & Algorithm Practice
 Solved problems on various **sorting algorithms**.  
@@ -332,7 +441,11 @@ Solved the following LeetCode problems:
 
 ✔ Strengthened understanding of Java I/O, string manipulation, search algorithms, and layered application architecture.
 
+---
+
 ### 📅 16 Jan 2026 (Friday)
+
+---
 
 **Topics Studied:**
 - StringBuilder
@@ -350,8 +463,11 @@ Solved the following LeetCode problems:
 - Studied about the various layers in software development.
 - Started working on the Address Book problem.
 
+---
 
 ### 📅 17 Jan 2026 (Saturday)
+
+---
 
 ## 📌 Topics Covered
 
@@ -380,7 +496,11 @@ Solved the following LeetCode problems:
 
 # 📅 WEEK 6 – DSA AND COLLECTIONS 
 
+---
+
 ### 📅 19 Jan 2026 (Monday)
+
+---
 
 ✅ **Address Book:** Solved up to **UC12**  
 📚 **Revision:** Core Java fundamentals & OOPs practice  
@@ -388,8 +508,11 @@ Solved the following LeetCode problems:
    1. **Integer Square Root**  
    2. **Permutation Sequence**
 
+---
 
 ### 📅 20 Jan 2026 (Tuesday)
+
+---
 
 ## 📖 Overview
 This repository contains **scenario-based Java projects** demonstrating **OOP concepts and data structures**.  
@@ -437,6 +560,7 @@ These projects focus on real-world scenarios and problem-solving skills.
 1. **Power of Two** – Check if a number is a power of two.  
 2. **Ugly Number** – Check if a number’s prime factors are limited to 2, 3, 5.
 
+---
 
 ### 📅 21 Jan 2026 (Wednesday)
 
@@ -506,6 +630,8 @@ Solved the following **LeetCode problems**:
 
 ### 📅 22 Jan 2026 (Thursday)
 
+---
+
 ### 📚 Java Collections
 ✔ Solved multiple **Collection Framework** questions  
 ✔ Practiced usage of **List, Set, Map, Queue**  
@@ -557,6 +683,8 @@ Solved the following **LeetCode problems**:
 
 ### 📅 23 Jan 2026 (Friday)
 
+---
+
 ### 🌊 Java Streams
 ✔ Studied **Java Streams** in more depth  
 ✔ Solved multiple stream-related questions  
@@ -581,6 +709,7 @@ Solved the following **LeetCode problems**:
 ---
 
 # 📅 WEEK 7 – JAVA COLLECTIONS, STREAMS AND EXCEPTIONS
+---
 
 ### 📅 26 Jan 2026 (Monday)
 
@@ -612,6 +741,7 @@ Solved the following **LeetCode problems**:
 ⭐ Improved problem-solving skills through **LeetCode**  
 ⭐ Maintained consistent code uploads on **GitHub**
 
+---
 
 ### 📅 27 Jan 2026 (Tuesday)
 
@@ -648,6 +778,7 @@ Solved the following **LeetCode problems**:
 - Enhanced **scenario-based thinking** with real-life puzzles.
 - Increased **problem-solving speed and confidence** on LeetCode challenges.
 
+---
 
 ### 📅 28 Jan 2026 (Wednesday)
 
@@ -703,7 +834,11 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 - Gained confidence in **regex patterns and unit testing**.
 - Improved logical thinking for **binary operations and number systems**.
 
+---
+
 ### 📅 29 Jan 2026 (Thursday)
+
+---
 
 ### ✅ LeetCode Challenges
 - [x] **Binary Date Conversion** 🧮
@@ -725,8 +860,11 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 ### 🎯 Summary
 > Focused on improving coding problem-solving through LeetCode challenges and enhanced testing knowledge by practicing Regex and JUnit problems. Strengthened understanding of validation, exception handling, and writing maintainable code.
 
+---
 
 ### 📅 30 Jan 2026 (Friday)
+
+---
 
 ### ✅ LeetCode Challenges
 - [x] **Arranging Coins** 🪙
@@ -755,8 +893,11 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 
 # 📅 WEEK 8 – JAVA COLLECTIONS, STREAMS , IO PROGRAMMING And JAVA8 & ITS FEATURES
 
+---
+
 ### 📅 02 Feb 2026 (Monday)
 
+---
 ### ✅ Java & LeetCode Challenges
 - [x] Solved **Reflection**, **Annotations**, and **CSV Handling** problems 🔍  
 - [x] Solved **Lambda Expression** problem ⚡  
