@@ -1,0 +1,7 @@
+{
+  "student": {
+    "name": "Janhavi Singh",
+    "age": 21,
+    "subjects": ["Math", "Physics", "Computer Science"]
+  }
+}
