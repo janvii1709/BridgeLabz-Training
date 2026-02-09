@@ -58,7 +58,45 @@ BridgeLabz-Training/
 │ ├── leet-code-codebase/
 │ └── scenario-based/
 │
-├── reviews/ (Branch)
+│
+├── java-8-features-practice/ (Branch & Folder)
+│ ├── gcr-codebase/
+│ │ ├── lambda-expressions/
+│ │ ├── functional-interfaces/
+│ │ ├── stream-api/
+│ │ └── collectors/
+│ ├── leet-code-codebase/
+│ └── scenario-based/
+│
+│
+├── multi-threading-practice/ (Branch & Folder)
+│ ├── gcr-codebase/
+│ │ ├── thread-synchronization/
+│ │ ├── thread-pool/
+│ │ └── thread-communication/
+│ ├── leet-code-codebase/
+│ └── scenario-based/
+│
+│
+├── solution-designing-practice/ (Branch & Folder)
+│ ├── gcr-codebase/
+| |  └──solution-designing project
+| |
+| ├── leet-code-codebase/
+│ └── scenario-based/
+|
+│
+│
+├── jdbc-practice/ (Branch & Folder)
+│ ├── gcr-codebase/
+| |  └──jdbc project
+| |
+| ├── leet-code-codebase/
+│ └── scenario-based/
+|
+│
+├── reviews/ (Branch & Folder)
+|
 │
 └── README.md
 
@@ -891,7 +929,7 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 
 ---
 
-# 📅 WEEK 8 – JAVA COLLECTIONS, STREAMS , IO PROGRAMMING And JAVA8 & ITS FEATURES
+# 📅 WEEK 8 – JAVA COLLECTIONS, STREAMS , IO PROGRAMMING , JAVA8 & ITS FEATURES , MULTI-THREADING AND SOLUTION DESIGNING
 
 ---
 
@@ -1057,6 +1095,37 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 
 ### 🎯 Summary
 > Focused on solving a real-world scenario-based problem along with strengthening Java advanced concepts such as Collectors, Multi-threading, Design Patterns, and Functional Interfaces. Enhanced algorithmic thinking by solving mathematical LeetCode problems and pushed all work to GitHub for version control.
+
+---
+
+# 📅 WEEK 9 – JDBC & DBMS
+
+---
+
+### 📅 08 Feb 2026 (Monday)
+
+---
+
+### ✅ Scenario-Based Problem Solving
+- [x] Solved **collection-based scenario problems** 📚  
+- [x] Applied Java Collections Framework concepts in real-world scenarios  
+
+### ✅ LeetCode Problems
+- [x] **Count Primes** 🔢  
+- [x] **Gray Code** 🔄  
+
+### 🧪 Code Quality & Tools
+- [x] Studied and worked on **SonarQube** 🧪  
+- [x] Understood code quality metrics, bugs, vulnerabilities, and code smells  
+
+### 🛠 Skills Strengthened
+- Java Collections & data handling 📚  
+- Mathematical and bit manipulation logic 🧠  
+- Algorithmic problem-solving 🧩  
+- Code quality analysis & best practices using SonarQube ✨  
+
+### 🎯 Summary
+> Focused on solving collection-based scenario problems and strengthening algorithmic problem-solving through LeetCode challenges. Also gained hands-on experience with SonarQube to understand and improve code quality, maintainability, and best practices.
 
 ---
 
