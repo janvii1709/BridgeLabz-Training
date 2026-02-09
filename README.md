@@ -979,6 +979,87 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 
 ---
 
+### 📅 05 Feb 2026 (Thursday)
+
+---
+
+### ✅ Scenario-Based Problem Solving
+- [x] Solved **Aero-Vigil** scenario-based problem ✈️🛡️  
+- [x] Applied logical thinking, OOP concepts, and clean code practices  
+
+### 📘 Exam Preparation (M1 Exam)
+- [x] Revised **Core Java concepts** ☕  
+- [x] Revised **OOP principles** 🧠  
+- [x] Revised **Collections & Java 8 basics** 📚  
+- [x] Focused on strengthening weak areas and concept clarity  
+
+### 🛠 Skills Strengthened
+- Scenario-based problem analysis & implementation 🧩  
+- Concept revision & theoretical understanding 📖  
+- Exam-oriented preparation strategy 🎯  
+
+### 🎯 Summary
+> Focused on solving a real-world scenario-based problem (Aero-Vigil) while revising key Java concepts for the M1 Exam. Strengthened conceptual clarity and reinforced problem-solving fundamentals.
+
+---
+
+### 📅 06 Feb 2026 (Friday)
+
+---
+
+### 📘 Exam Preparation (M1 Exam)
+- [x] Revised **Core Java concepts** ☕  
+- [x] Revised **OOP principles** 🧠  
+- [x] Revised **Collections & Java 8 fundamentals** 📚  
+- [x] Focused on concept clarity and exam-oriented revision  
+
+### 🗣️ Soft Skills Session
+- [x] Attended **Soft Skills Session** conducted by **BridgeLabz** 🤝  
+- [x] Learned about professional communication & workplace etiquette  
+- [x] Improved confidence, collaboration, and presentation skills 🌱  
+
+### 🛠 Skills Strengthened
+- Technical revision & concept reinforcement 📖  
+- Communication & interpersonal skills 🗣️  
+- Professional behavior and teamwork 🤝  
+
+### 🎯 Summary
+> Focused on revising key technical concepts for the M1 Exam and attended a BridgeLabz soft skills session to enhance communication, confidence, and professional readiness.
+
+---
+
+### 📅 07 Feb 2026 (Saturday)
+
+---
+
+### ✅ Scenario-Based Problem Solving
+- [x] Solved **Ocean-Feet** scenario-based problem 🌊🦶  
+- [x] Applied real-world logic and modular design  
+
+### ✅ Java Advanced Concepts Practice
+- [x] Solved **Collectors** problems 🧺  
+- [x] Solved **Multi-Threading** problems 🧵  
+- [x] Solved **Design Patterns** problems 🏗️  
+- [x] Solved **Functional Interface** problems ⚡  
+- [x] **Pushed all implementations to GitHub** 💻🚀  
+
+### ✅ LeetCode Problems
+- [x] **Prime Arrangements** 🔢  
+- [x] **Square Triples** 📐  
+
+### 🛠 Skills Strengthened
+- Scenario-based problem-solving & system thinking 🧠  
+- Java Streams & Collectors API 🌊  
+- Multi-threading & concurrency concepts 🧵  
+- Design patterns & clean architecture 🏗️  
+- Functional programming using Java 8 ⚡  
+- Mathematical & combinational problem-solving 🔢  
+
+### 🎯 Summary
+> Focused on solving a real-world scenario-based problem along with strengthening Java advanced concepts such as Collectors, Multi-threading, Design Patterns, and Functional Interfaces. Enhanced algorithmic thinking by solving mathematical LeetCode problems and pushed all work to GitHub for version control.
+
+---
+
 ## 🚀 Skills & Learning Progress
 
 ---
