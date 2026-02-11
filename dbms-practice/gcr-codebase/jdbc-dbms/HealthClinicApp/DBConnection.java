@@ -3,12 +3,19 @@ import java.sql.DriverManager;
 
 public class DBConnection {
 
-    public static Connection getConnection() throws Exception {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/clinic_db",
-                "root",
-                "root123"  
-        );
+    public static Connection getConnection() {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            return DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/healthclinic",
+                    "root",
+                    "yourpassword"
+            );
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

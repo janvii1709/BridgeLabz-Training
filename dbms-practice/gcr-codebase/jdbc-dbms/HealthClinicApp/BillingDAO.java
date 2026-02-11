@@ -3,26 +3,27 @@ import java.util.Scanner;
 
 public class BillingDAO {
 
-    public static void generateBill(Scanner x) {
+    public static void generateBill(Scanner sc) {
         try {
             Connection con = DBConnection.getConnection();
 
-            System.out.println("Enter Visit ID:");
-            int vid = x.nextInt();
+            System.out.println("Enter Appointment ID:");
+            int appointmentId = sc.nextInt();
 
-            System.out.println("Enter Total Amount:");
-            double amount = x.nextDouble();
+            System.out.println("Enter Amount:");
+            double amount = sc.nextDouble();
 
-            String sql = "INSERT INTO bills(visit_id,total_amount,payment_status) VALUES(?,?,'UNPAID')";
-            PreparedStatement ps = con.prepareStatement(sql);
+            String query = "INSERT INTO billing(appointment_id, amount) VALUES (?, ?)";
 
-            ps.setInt(1, vid);
+            PreparedStatement ps = con.prepareStatement(query);
+            ps.setInt(1, appointmentId);
             ps.setDouble(2, amount);
 
             ps.executeUpdate();
-            System.out.println("Bill Generated");
+            System.out.println("Bill Generated Successfully!");
 
             con.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }

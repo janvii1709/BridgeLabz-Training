@@ -3,35 +3,32 @@ import java.util.Scanner;
 
 public class AppointmentDAO {
 
-    public static void bookAppointment(Scanner x) {
+    public static void bookAppointment(Scanner sc) {
         try {
             Connection con = DBConnection.getConnection();
 
             System.out.println("Enter Patient ID:");
-            int pid = x.nextInt();
+            int patientId = sc.nextInt();
 
             System.out.println("Enter Doctor ID:");
-            int did = x.nextInt();
+            int doctorId = sc.nextInt();
+            sc.nextLine();
 
-            System.out.println("Enter Date (yyyy-mm-dd):");
-            x.nextLine();
-            String date = x.nextLine();
+            System.out.println("Enter Appointment Date (YYYY-MM-DD):");
+            String date = sc.nextLine();
 
-            System.out.println("Enter Time (hh:mm:ss):");
-            String time = x.nextLine();
+            String query = "INSERT INTO appointments(patient_id, doctor_id, date) VALUES (?, ?, ?)";
 
-            String sql = "INSERT INTO appointments(patient_id,doctor_id,appointment_date,appointment_time,status) VALUES(?,?,?,?, 'SCHEDULED')";
-            PreparedStatement ps = con.prepareStatement(sql);
-
-            ps.setInt(1, pid);
-            ps.setInt(2, did);
-            ps.setDate(3, Date.valueOf(date));
-            ps.setTime(4, Time.valueOf(time));
+            PreparedStatement ps = con.prepareStatement(query);
+            ps.setInt(1, patientId);
+            ps.setInt(2, doctorId);
+            ps.setString(3, date);
 
             ps.executeUpdate();
-            System.out.println("Appointment Booked");
+            System.out.println("Appointment Booked Successfully!");
 
             con.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }

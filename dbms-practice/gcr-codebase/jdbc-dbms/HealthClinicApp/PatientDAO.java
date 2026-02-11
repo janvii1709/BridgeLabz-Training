@@ -3,42 +3,27 @@ import java.util.Scanner;
 
 public class PatientDAO {
 
-    public static void registerPatient(Scanner x) {
+    public static void addPatient(Scanner sc) {
         try {
             Connection con = DBConnection.getConnection();
 
-            System.out.println("Enter Patient Name:");
-            String name = x.nextLine();
-
-            System.out.println("Enter DOB (yyyy-mm-dd):");
-            String dob = x.nextLine();
+            System.out.println("Enter Name:");
+            String name = sc.nextLine();
 
             System.out.println("Enter Phone:");
-            String phone = x.nextLine();
+            String phone = sc.nextLine();
 
-            System.out.println("Enter Email:");
-            String email = x.nextLine();
+            String query = "INSERT INTO patients(name, phone) VALUES (?, ?)";
 
-            System.out.println("Enter Address:");
-            String address = x.nextLine();
-
-            System.out.println("Enter Blood Group:");
-            String bg = x.nextLine();
-
-            String sql = "INSERT INTO patients(name,dob,phone,email,address,blood_group) VALUES(?,?,?,?,?,?)";
-            PreparedStatement ps = con.prepareStatement(sql);
-
+            PreparedStatement ps = con.prepareStatement(query);
             ps.setString(1, name);
-            ps.setString(2, dob);
-            ps.setString(3, phone);
-            ps.setString(4, email);
-            ps.setString(5, address);
-            ps.setString(6, bg);
+            ps.setString(2, phone);
 
             ps.executeUpdate();
-            System.out.println("Patient Registered Successfully");
+            System.out.println("Patient Added Successfully!");
 
             con.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
