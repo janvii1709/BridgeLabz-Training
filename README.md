@@ -1102,7 +1102,7 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 
 ---
 
-### 📅 08 Feb 2026 (Monday)
+### 📅 09 Feb 2026 (Monday)
 
 ---
 
@@ -1126,6 +1126,63 @@ Solved **3 real-world scenario-based problems**, focusing on logic building and 
 
 ### 🎯 Summary
 > Focused on solving collection-based scenario problems and strengthening algorithmic problem-solving through LeetCode challenges. Also gained hands-on experience with SonarQube to understand and improve code quality, maintainability, and best practices.
+
+---
+
+### 📅 10 Feb 2026 (Tuesday)
+
+---
+
+### 📘 Exam Preparation (M1 Exam)
+- [x] Studied and revised key Java concepts ☕  
+- [x] Strengthened understanding of important exam topics  
+
+### 💾 JDBC Concepts
+- [x] Studied **JDBC architecture and workflow**  
+- [x] Understood DriverManager, Connection, Statement, PreparedStatement  
+- [x] Learned about executing queries and handling ResultSet  
+
+### 📝 Mock Exam
+- [x] Attempted **M1 Mock Exam**  
+- [x] Solved questions based on:
+  - Core Java  
+  - OOP  
+  - Collections  
+  - Exception Handling  
+  - Java 8 concepts  
+
+### 🛠 Skills Strengthened
+- Database connectivity concepts 📂  
+- SQL execution using Java 💻  
+- Exam-oriented problem-solving 🎯  
+
+### 🎯 Summary
+> Focused on revising technical concepts for the M1 Exam and gained foundational knowledge of JDBC. Attempted the M1 mock exam to evaluate preparation and strengthen weak areas.
+
+---
+
+### 📅 11 Feb 2026 (Wednesday)
+
+---
+
+### 💾 Advanced JDBC Practice
+- [x] Studied more about **JDBC concepts in depth**  
+- [x] Implemented and solved **Health Clinic App using JDBC** 🏥  
+- [x] Pushed the complete solution to **GitHub** 💻🚀  
+
+### ✅ LeetCode Problems
+- [x] **Largest Odd Number in String** 🔢  
+- [x] **Minimum Time Visiting All Points** 📍  
+
+### 🛠 Skills Strengthened
+- Database integration with Java (JDBC) 🗄️  
+- SQL query execution & data handling  
+- Problem-solving using strings & geometry logic 🧠  
+- Git & project version control 🚀  
+
+### 🎯 Summary
+> Deepened understanding of JDBC by implementing the Health Clinic App and pushing it to GitHub. Continued strengthening algorithmic skills by solving LeetCode problems focused on string manipulation and coordinate-based logic.
+
 
 ---
 
