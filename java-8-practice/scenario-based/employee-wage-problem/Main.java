@@ -5,7 +5,12 @@ public class Main{
         int wagePerHour = 20;
         int fullDayHours = 8;
         int partTimeHours = 4;
+        int totalWorkingDays = 20;
+        int totalMonthlyWage = 0;
+
         Random random = new Random();
+        for (int day = 1; day <= totalWorkingDays; day++) {
+
         int employeeCheck = random.nextInt(3);// 0 or 1 or 2
         int workingHours = 0;
         switch (employeeCheck) {
@@ -26,7 +31,10 @@ public class Main{
         }
 
         int dailyWage = workingHours * wagePerHour;
-
         System.out.println("Daily Employee Wage: INR " + dailyWage);
+        totalMonthlyWage += dailyWage;
+    }
+    System.out.println("Total Monthly Wage: INR "  + totalMonthlyWage);
+        
     }
 }
