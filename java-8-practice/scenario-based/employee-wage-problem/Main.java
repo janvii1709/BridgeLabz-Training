@@ -1,7 +1,7 @@
 import java.util.*;
 
-// Interface
 interface IEmpWageBuilder {
+
     void addCompany(String companyName,
                     int wagePerHour,
                     int maxWorkingDays,
@@ -10,49 +10,61 @@ interface IEmpWageBuilder {
     void computeEmployeeWage();
 
     int getTotalWage(String companyName);
+
+    ArrayList<Integer> getDailyWages(String companyName);
 }
 
-// ===== Company Class =====
+//Company Class
 class CompanyEmpWage {
 
-    String companyName;
+    private String companyName;
     int wagePerHour;
     int maxWorkingDays;
     int maxWorkingHours;
-    int totalMonthlyWage;
+    private int totalMonthlyWage;
 
-    CompanyEmpWage(String companyName,
-                   int wagePerHour,
-                   int maxWorkingDays,
-                   int maxWorkingHours) {
+    private ArrayList<Integer> dailyWages;
+
+    CompanyEmpWage(String companyName,int wagePerHour,int maxWorkingDays,int maxWorkingHours) {
 
         this.companyName = companyName;
         this.wagePerHour = wagePerHour;
         this.maxWorkingDays = maxWorkingDays;
         this.maxWorkingHours = maxWorkingHours;
-        this.totalMonthlyWage = 0;
+        this.dailyWages = new ArrayList<>();
     }
 
-    void setTotalMonthlyWage(int totalMonthlyWage) {
-        this.totalMonthlyWage = totalMonthlyWage;
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public int getTotalMonthlyWage() {
+        return totalMonthlyWage;
+    }
+
+    public void addDailyWage(int dailyWage) {
+        dailyWages.add(dailyWage);
+        totalMonthlyWage += dailyWage;
+    }
+
+    public ArrayList<Integer> getDailyWages() {
+        return dailyWages;
     }
 }
 
-// ===== Builder Class Implementing Interface =====
+//Builder Class
 class EmpWageBuilder implements IEmpWageBuilder {
 
     private ArrayList<CompanyEmpWage> companyList;
 
-    private final int FULL_TIME_HOURS = 8;
-    private final int PART_TIME_HOURS = 4;
+    private static final int FULL_TIME_HOURS = 8;
+    private static final int PART_TIME_HOURS = 4;
 
     EmpWageBuilder() {
         companyList = new ArrayList<>();
     }
 
-    // Add Company
     public void addCompany(String companyName,int wagePerHour,int maxWorkingDays,int maxWorkingHours) {
-
         companyList.add(new CompanyEmpWage(
                 companyName,
                 wagePerHour,
@@ -60,14 +72,12 @@ class EmpWageBuilder implements IEmpWageBuilder {
                 maxWorkingHours));
     }
 
-    // Compute Wage for All Companies
     public void computeEmployeeWage() {
 
         for (CompanyEmpWage company : companyList) {
 
             int totalWorkingDays = 0;
             int totalWorkingHours = 0;
-            int totalWage = 0;
 
             Random random = new Random();
 
@@ -90,26 +100,38 @@ class EmpWageBuilder implements IEmpWageBuilder {
                 }
 
                 totalWorkingHours += workingHours;
-                totalWage += workingHours * company.wagePerHour;
+
+                int dailyWage = workingHours * company.wagePerHour;
+
+                company.addDailyWage(dailyWage);
             }
 
-            company.setTotalMonthlyWage(totalWage);
-
-            System.out.println("Company: " + company.companyName);
-            System.out.println("Total Monthly Wage: INR " + totalWage);
-            System.out.println("------------------------------------");
+            System.out.println("Company: " + company.getCompanyName());
+            System.out.println("Daily Wages: " + company.getDailyWages());
+            System.out.println("Total Monthly Wage: INR " +
+                    company.getTotalMonthlyWage());
+            System.out.println("-------------------------------------");
         }
     }
 
-    // Get Wage by Company Name
     public int getTotalWage(String companyName) {
 
         for (CompanyEmpWage company : companyList) {
-            if (company.companyName.equals(companyName)) {
-                return company.totalMonthlyWage;
+            if (company.getCompanyName().equals(companyName)) {
+                return company.getTotalMonthlyWage();
             }
         }
         return -1;
+    }
+
+    public ArrayList<Integer> getDailyWages(String companyName) {
+
+        for (CompanyEmpWage company : companyList) {
+            if (company.getCompanyName().equals(companyName)) {
+                return company.getDailyWages();
+            }
+        }
+        return null;
     }
 }
 public class Main {
@@ -122,9 +144,11 @@ public class Main {
 
         builder.addCompany("TCS", 20, 20, 100);
         builder.addCompany("Infosys", 25, 22, 110);
-        builder.addCompany("Wipro", 18, 20, 90);
 
         builder.computeEmployeeWage();
+
+        System.out.println("TCS Daily Wages: " +
+                builder.getDailyWages("TCS"));
 
         System.out.println("TCS Total Wage: INR " +
                 builder.getTotalWage("TCS"));
