@@ -2,18 +2,31 @@ import java.util.*;
 public class Main{
     public static void main(String[] args) {
         System.out.println("Welcome To Employee Wage Computation Program ");
-        int wagerPerHour = 20;
+        int wagePerHour = 20;
         int fullDayHours = 8;
+        int partTimeHours = 4;
         Random random = new Random();
-        int attendance = random.nextInt(2);// 0 or 1
-        if(attendance == 1){
-            System.out.println("Employee is Present");
-            int dailyWage = wagerPerHour * fullDayHours;
-            System.out.println("Daily Employee Wage : INR " +dailyWage);
+        int employeeCheck = random.nextInt(3);// 0 or 1 or 2
+        int workingHours = 0;
+        switch (employeeCheck) {
+
+            case 1:
+                System.out.println("Employee is Part Time");
+                workingHours = partTimeHours;
+                break;
+
+            case 2:
+                System.out.println("Employee is Full Time");
+                workingHours = fullDayHours;
+                break;
+
+            default:
+                System.out.println("Employee is Absent");
+                workingHours = 0;
         }
-        else{
-            System.out.println("Employee is Absent");
-            System.out.println("Daily Employee Wage : INR 0 ");
-        }
+
+        int dailyWage = workingHours * wagePerHour;
+
+        System.out.println("Daily Employee Wage: INR " + dailyWage);
     }
 }
