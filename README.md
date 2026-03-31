@@ -196,7 +196,7 @@ BridgeLabz-Training/
 - ![Java8](https://img.shields.io/badge/Java_8-purple?style=flat-square) **Java 8 Features:** Streams, Lambda Expressions, Functional Interfaces, Collectors  
 - ![Thread](https://img.shields.io/badge/Multi-threading-orange?style=flat-square) **Multi-threading:** Thread synchronization, Thread pool, Communication  
 - ![DSA](https://img.shields.io/badge/DSA-darkgreen?style=flat-square) **DSA:** Linked List, Stack, Queue, HashMap, Sorting & Searching Algorithms  
--- ![Problems](https://img.shields.io/badge/Scenario-Based_Problems-success?style=flat-square) **Practical Scenario-Based Problems Solved:**  
+- ![Problems](https://img.shields.io/badge/Scenario-Based_Problems-success?style=flat-square) **Practical Scenario-Based Problems Solved:**  
   - **SmartCheckout** – Simulated billing and checkout logic  
   - **ParcelTracker** – Real-world parcel tracking and management  
   - **CinemaTime** – Movie ticket booking scenarios and seat allocation  
