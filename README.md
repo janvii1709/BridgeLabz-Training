@@ -196,7 +196,15 @@ BridgeLabz-Training/
 - ![Java8](https://img.shields.io/badge/Java_8-purple?style=flat-square) **Java 8 Features:** Streams, Lambda Expressions, Functional Interfaces, Collectors  
 - ![Thread](https://img.shields.io/badge/Multi-threading-orange?style=flat-square) **Multi-threading:** Thread synchronization, Thread pool, Communication  
 - ![DSA](https://img.shields.io/badge/DSA-darkgreen?style=flat-square) **DSA:** Linked List, Stack, Queue, HashMap, Sorting & Searching Algorithms  
-- ![Projects](https://img.shields.io/badge/Projects-blueviolet?style=flat-square) **Scenario-Based Projects:** SmartCheckout, ParcelTracker, CinemaTime, Address Book, Aero-Vigil, Ocean-Feet, Flight Booking, Hospital Management  
+-- ![Problems](https://img.shields.io/badge/Scenario-Based_Problems-success?style=flat-square) **Practical Scenario-Based Problems Solved:**  
+  - **SmartCheckout** – Simulated billing and checkout logic  
+  - **ParcelTracker** – Real-world parcel tracking and management  
+  - **CinemaTime** – Movie ticket booking scenarios and seat allocation  
+  - **Address Book** – Contact management and CRUD operations practice  
+  - **Aero-Vigil** – Flight monitoring and alert generation logic  
+  - **Ocean-Feet** – Logistics and port management scenarios  
+  - **Flight Booking** – Booking and reservation workflow practice  
+  - **Hospital Management** – Patient & staff management simulations   
 - ![Testing](https://img.shields.io/badge/Testing-JUnit-lightgrey?style=flat-square) **Testing & Quality:** JUnit, Regex, SonarQube  
 - ![Git](https://img.shields.io/badge/Git-red?style=flat-square) **Version Control:** Git branching, merging, commits, repository organization  
 
